@@ -94,7 +94,7 @@
     </article>
 
 <!-- Signatories -->
-    <div class="uk-grid uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid></div>
+    <div class="uk-grid uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
         <div>
             <strong>Gabriele Ellsaesser</strong>
             <br>
