@@ -1,0 +1,107 @@
+/*  naming the Congress Compact EUSUHM classes
+    eus
+    to differentiate them from the "eu" classes of the predecessor 
+*/
+
+:root {
+    --color-main:   rgb(23, 207, 100);
+    --color-orange: #F29B74;
+    --color-yellow: #F3FB34;
+    --font-serif: SabonLTPro-Roman, Helvetica, Arial;
+    --font-sans: NoahGrotesque-Medium, Georgia;
+    /* position of main logo */
+    --logo-top: 20px;
+    --logo-left: 20px
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, .uk-text, h1, h2, li {
+    font-family: var(--font-sans);
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+}
+
+.uk-navbar-nav > li > a {
+    font-family: var(--font-serif);
+    text-transform: capitalize;
+}
+
+p {
+    font-family: var(--font-serif);
+}
+
+
+h1 {
+    color: var(--color-main);
+}
+
+.eus-background-prime {
+    background-color: var(--color-main);
+}
+
+.eus-background-prime h1{
+    color: white;
+}
+
+.eus-clip {
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0% 100%);
+    /* background-color: rebeccapurple; */
+}
+
+.eus-text-50 {
+    font-size: 50px;
+}
+
+.eus-text-xxlarge {
+    font-size: xx-large;
+}
+
+.eus-height-300 {
+    min-height: 300px;
+}
+
+.red {
+    color: red;
+}
+
+#eus-sticky-logo {
+    position: fixed;
+    top: var(--logo-top);
+    left: var(--logo-left);
+    z-index: 10000;
+}
+
+.eus-logo-text {
+    position: absolute;
+    left: calc(var(--logo-left) +   60px);
+    top: calc(var(--logo-top) +     20px);
+}
+
+.eus-logo-text img {
+    width: 70%;
+}
+
+#eus-sticky-logo svg circle{
+    fill:var(--color-main);
+}
+
+.uk-textarea {
+    resize: none;
+}
+
+.eus-potsdam-bg {
+    background-image: url(../img/photos/potsdam.jpg);
+    background-color: rgb(117, 117, 117);
+}
+
+@media screen and (max-width: 600px) {
+    #eus-forthechildren {
+        font-size: 1.1rem;
+    }
+}
