@@ -1,7 +1,7 @@
 
 const basePath = window.location.pathname.replace(/\/$/, '');
 export const navbarlinks = [
-  ["EUSUHM", `${basePath}/`, "_self"],
+  ["EUSUHM", `${basePath}/index.html`, "_self"],
   ["About", `${basePath}/#about`, "_self"],
   ["Congress", "https://www.eusuhm.org", "_blank"],
   ["Contact", `${basePath}/#contact`, "_self"],

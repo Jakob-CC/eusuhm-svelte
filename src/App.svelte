@@ -14,8 +14,10 @@
 
 	// This will run when the component mounts
 	onMount(() => {
+		console.log("Initial currentRoute: ", currentRoute); // Debugging line
 		window.addEventListener('popstate', () => {
 			currentRoute = window.location.pathname;
+			console.log("Updated currentRoute: ", currentRoute); // Debugging line
 		});
 	});
 
@@ -30,10 +32,9 @@
 <Navbar/>
 
 {#if currentRoute === '/submit'}
-  <Submit>
+  	<Submit />
 	<Contact />
-    <!-- SubPage Content -->
-  </Submit>
+
 {:else}
   <Landing />
   <Contact />

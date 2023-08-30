@@ -53,7 +53,8 @@
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           {#each navbarlinks as [text, url, target]}
-            <li><a href="img/eusuhm_logo_text.svg" target={target} rel='noopener'>{text}</a></li>
+            <li><a href={url} target={target} rel='noopener'>{text}</a></li>
+
           {/each}
         </ul>
       </div>
