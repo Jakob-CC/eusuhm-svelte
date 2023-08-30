@@ -19,7 +19,7 @@
 <!-- Submit Component -->
 <div class="uk-container">
     <h1 class="uk-heading-large uk-padding-large uk-text-center">Submit your abstract here</h1>
-    <button class="uk-button uk-button-primary ">Submit</button> 
+    <button class="uk-button uk-button-primary uk-button-large">Submit</button> 
     <h2>Our main topics in 2024</h2>
     <ul class="uk-list uk-list-large">
         {#each hottopics as hottopic}
