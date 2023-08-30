@@ -11,8 +11,10 @@
         <h2 id="eus-forthechildren">For the Health and Wellbeing of Children <br> and Young People in Europe</h2>
     </article>
     <section id="top" class="eus-potsdam-bg  uk-section uk-section-primary uk-section-xlarge uk-text-center uk-light eus-background-prime">
-        <h1 class="uk-heading-large">22nd&nbsp;Conference </h1>
-        <h2>on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students — Reduce&nbsp;the&nbsp;GAP!</h2>
+        <div  class="uk-card uk-card-body uk-background-primary uk-padding-small ">
+          <h1 class="uk-heading-large">22nd&nbsp;Conference </h1>
+          <h2 class="uk-padding uk-padding-remove-top">on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2>
+        </div>
     </section>
     <!-- Conference Introduction -->
     <article id="about" class="uk-padding uk-margin-xlarge">
