@@ -19,12 +19,16 @@
 <!-- Submit Component -->
 <div class="uk-container uk-padding-large">
     <h1 class="uk-heading-large uk-text-center">Submit your abstract here</h1>
-    <button class="uk-button uk-button-primary uk-button-large uk-margin">Submit</button> 
-    <h2>Our main topics in 2024</h2>
-    <ul class="uk-list uk-list-large">
-        {#each hottopics as hottopic}
-            <li>{hottopic}</li>
-        {/each}
-    </ul>
+
+    <div class="uk-flex uk-flex-center uk-padding-large"><button class="uk-button uk-button-primary uk-button-large uk-margin">Submit</button> </div>
+    <section class="uk-section-muted uk-padding">
+        
+        <h2 class="uk-text-center">Our main topics in 2024</h2>
+        <ul class="uk-list uk-list-large uk-text-center">
+            {#each hottopics as hottopic}
+                <li>{hottopic}</li>
+            {/each}
+        </ul>
+    </section>
 
 </div> 
