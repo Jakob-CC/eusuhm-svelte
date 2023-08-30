@@ -4,7 +4,8 @@ export const navbarlinks = [
   ["EUSUHM", "/", "_self"],
   ["About", "#about", "_self"],
   ["Congress", "https://www.eusuhm.org", "_blank"],
-  ["Contact", "#contact", "_self"]
+  ["Contact", "#contact", "_self"],
+  ["Submit", "/submit", "_self"]
 ];
 
 export const topics = [
