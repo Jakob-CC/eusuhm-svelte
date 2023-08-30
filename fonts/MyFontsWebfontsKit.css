@@ -1,0 +1,36 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4002233, 2021-01-26T05:38:53-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SabonLTPro-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/sabon/roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &amp;#x00A9; 2008 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * Webfont: NoahGrotesque-Medium by Fontfabric
+ * URL: https://www.myfonts.com/fonts/font-fabric/noah/grotesque-medium/
+ * Copyright: Copyright (c) 2019 by Svet Simov. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d11b9");
+  
+@font-face {
+  font-family: 'SabonLTPro-Roman';
+  src: url('webFonts/SabonLTPro-Roman/font.woff2') format('woff2'), url('webFonts/SabonLTPro-Roman/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'NoahGrotesque-Medium';
+  src: url('webFonts/NoahGrotesque-Medium/font.woff2') format('woff2'), url('webFonts/NoahGrotesque-Medium/font.woff') format('woff');
+}
+
