@@ -1,11 +1,11 @@
-//import { writable } from 'svelte/store';
 
+const basePath = window.location.pathname.replace(/\/$/, '');
 export const navbarlinks = [
-  ["EUSUHM", "/", "_self"],
-  ["About", "#about", "_self"],
+  ["EUSUHM", `${basePath}/`, "_self"],
+  ["About", `${basePath}/#about`, "_self"],
   ["Congress", "https://www.eusuhm.org", "_blank"],
-  ["Contact", "#contact", "_self"],
-  ["Submit", "/submit", "_self"]
+  ["Contact", `${basePath}/#contact`, "_self"],
+  ["Submit", `${basePath}/submit`, "_self"]
 ];
 
 export const topics = [
