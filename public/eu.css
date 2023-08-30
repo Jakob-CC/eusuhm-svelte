@@ -4,10 +4,10 @@
 */
 
 :root {
-    --color-main:   rgb(23, 207, 100);
-    --color-main-dark: rgb(0, 129, 54);
-    --color-orange: #F29B74;
-    --color-yellow: #F3FB34;
+    --color-main:       rgb(23, 207, 100);
+    --color-main-dark:  rgb(0, 129, 54);
+    --color-orange:     #F29B74;
+    --color-yellow:     #F3FB34;
     --font-serif: SabonLTPro-Roman, Helvetica, Arial;
     --font-sans: NoahGrotesque-Medium, Georgia;
     /* position of main logo */
