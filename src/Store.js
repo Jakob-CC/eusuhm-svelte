@@ -1,8 +1,8 @@
 const basePath = window.location.origin;
 export const navbarlinks = [
-  ["EUSUHM", `${basePath}/`, "_self"],
+  ["Home", `${basePath}/`, "_self"],
   ["About", `${basePath}/#about`, "_self"],
-  ["Congress", "https://www.eusuhm.org", "_blank"],
+  ["EUSUHM", "https://www.eusuhm.org", "_blank"],
   ["Contact", `${basePath}/#contact`, "_self"],
   ["Submit", `${basePath}/submit`, "_self"]
 ];
@@ -19,9 +19,9 @@ export const topics = [
 ];
 
 export const objectives = [
-  "Exchange of evidence",
-  "Experiences",
-  "Best practices"
+  "Exchange of Evidence",
+  "Exchange of Experiences",
+  "Showcase Best Practices"
 ];
 
 export const euscolors = [];
