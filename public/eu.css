@@ -106,3 +106,53 @@ h1 {
         font-size: 1.1rem;
     }
 }
+
+
+.eus-table {
+    /* color: red; */
+    border-collapse: collapse;
+}
+
+
+/* Agenda */
+.eus-table tr {
+    td{
+        padding: 0 0 0 15px;
+        border-bottom: 1px solid var(--color-main);
+    }
+
+    /* time */
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4)
+    {
+        color: var(--color-main);
+        font-size: small;
+        /* border: 1px solid red; */
+        width: 20px;
+    }
+    td:nth-child(3){
+        width: 0px;
+        
+    }
+
+    /* agenda */
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7)
+    {
+        width: 200px;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    /* time details */
+    td:nth-child(1)
+}
+
+/* single agenda tr*/
+.eus-single-agenda{
+    /* border: 1px solid red; */
+    column-span: 3;
+}

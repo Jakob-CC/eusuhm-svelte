@@ -24,4 +24,10 @@ export const objectives = [
   "Showcase Best Practices"
 ];
 
-export const euscolors = [];
+export const euscolors = [
+  'rgb(23, 207, 100)',
+  '#F29B74',
+  '#F3FB34',
+  // darker shades
+  'rgb(0, 129, 54)',
+];

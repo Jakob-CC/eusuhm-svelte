@@ -1,6 +1,5 @@
 <script>
-    import {objectives, topics} from './Store.js'
-
+    import {objectives, topics, euscolors} from './Store.js'
 </script>
 
 
@@ -8,13 +7,13 @@
 <main class="uk-container">
     <!-- HERO SECTION -->
     <article id="" class="uk-padding uk-padding-remove-bottom">
-        <h2 id="eus-smallhead">Sustainable Health in Children and Students — Reduce the GAP!</h2>
+        <h2 id="eus-smallhead">Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2>
     </article>
     <section id="top" class="eus-potsdam-bg  uk-section uk-section-primary uk-section-xlarge uk-text-center uk-light eus-background-prime">
-        <div  class="uk-card uk-card-body uk-background-primary uk-padding-small ">
-          <h2 class="uk-padding-remove">Congress Announcement</h2>
-          <h1 class="uk-heading-large"> 22nd&nbsp;Congress </h1>
-          <h2 class="uk-padding uk-padding-remove-top">on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2>
+        <div style="max-width:80%; margin-left: 40px" class="eus-clip uk-card uk-card-body uk-background-primary uk-padding-small ">
+          <h3>Congress Announcement</h3>
+          <h1 class="uk-heading-large"> 22nd&nbsp;EUSUHM Congress </h1>
+          <!-- <h2 class="uk-padding uk-padding-remove-top">on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2> -->
         </div>
     </section>
     <!-- congress Introduction -->
@@ -56,6 +55,38 @@
         </div>
       </article>
     </section>
+    <section>
+      <h1>Programm</h1>
+      <table class="eus-table">
+        <tr style="display:none">
+          <th>day name</th>
+          <th>start time</th>
+          <th>—</th>
+          <th>end time</th>
+          <th>agenda1</th>
+          <th>agenda2</th>
+          <th>agenda3</th>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>13:00</td>
+          <td>—</td>
+          <td></td>
+          <td></td>
+          <td class="eus-single-agenda">Welcome Reception</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:30</td>
+          <td>—</td>
+          <td>11:00</td>
+          <td>Data for Action Monitoring Health in Children, Adolescents, and Students</td>
+          <td>Intersectoral Interventions: Public Health on Site</td>
+          <td>School Nurses and Networking (GE/EN)</td>
+        </tr>
+      </table>
+    </section>
   </div>
   
 
@@ -64,13 +95,15 @@
     <article>
       <h1 class="uk-text-center uk-margin-large-top uk-heading-small">Objectives of the congress</h1>
       <div class="uk-grid uk-grid-match uk-child-width-1-3@s uk-margin-large-top" uk-grid>
-        {#each objectives as objective}
+        {#each objectives as objective, i}
           <div class="eus-clip">
-            <div class="uk-text-center uk-card uk-card-secondary uk-card-body uk-flex uk-flex-middle uk-flex-center">
+            <!-- euscolors contains also darker shades. the first three are the main colors. so length-darkshades -->
+            <!-- the first color should not be green, so i+n -->
+            <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}" class="uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center">
               <h2 class="uk-text-bold">{objective}</h2>
             </div>
           </div>
-        {/each}
+        {/each}    
       </div>
     </article>
   </section>
