@@ -142,17 +142,16 @@ h1 {
     td:nth-child(6),
     td:nth-child(7)
     {
-        width: 200px;
         text-align: center;
         font-size: x-large;
     }
 
-    /* time details */
-    td:nth-child(1)
 }
 
-/* single agenda tr*/
-.eus-single-agenda{
-    /* border: 1px solid red; */
-    column-span: 3;
+.eus-triplet {
+    display: flex;
+}
+
+.eus-flex1{
+    flex: 1;
 }
