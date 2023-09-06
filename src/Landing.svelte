@@ -1,5 +1,5 @@
 <script>
-    import {objectives, topics, euscolors} from './Store.js'
+    import {objectives, topics, euscolors, eventSchedule} from './Store.js'
 </script>
 
 
@@ -54,59 +54,6 @@
           {/each}
         </div>
       </article>
-    </section>
-    <section class="uk-padding uk-margin-xlarge">
-      <h1 class="uk-text-center uk-heading-large">Programm</h1>
-      <table class="eus-table uk-margin-large-top">
-        <tr style="display:none">
-          <th>day name</th>
-          <th>start time</th>
-          <th>—</th>
-          <th>end time</th>
-          <th>agenda1</th>
-          <th>agenda2</th>
-          <th>agenda3</th>
-        </tr>
-        <h3>Friday</h3>
-        <tr>
-          <td>Friday</td>
-          <td>8:00</td>
-          <td>—</td>
-          <td>9:00</td>
-
-          <td style="colspan:3;">Pitch Poster Presentations</td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>9:00</td>
-          <td>—</td>
-          <td>9:30</td>
-          
-          <td>Coffee Break</td>
-        </tr>
-
-        <tr>
-          <td>Friday</td>
-          <td>9:30</td>
-          <td>—</td>
-          <td>11:00</td>
-          
-          <td class="eus-triplet">
-            <div class="eus-flex1">Data for Action Monitoring Health in Children, Adolescents, and Students</div>
-            <div class="eus-flex1">Intersectoral Interventions: Public Health on Site</div>
-            <div class="eus-flex1">School Nurses and Networking (GE/EN)</div>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Friday</td>
-          <td>11:00</td>
-          <td>—</td>
-          <td>11:30</td>
-
-          <td>Coffee Break</td>
-        </tr>
-      </table>
     </section>
   </div>
   

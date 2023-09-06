@@ -1,13 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 	
-	// main page
+	// main sections
 	import Navbar from './Navbar.svelte';
-	import Landing from './Landing.svelte';
 	import Footer from './Footer.svelte';
 	import Contact from './Contact.svelte';
-	// submit page
+	// sub sections
+	import Landing from './Landing.svelte';
 	import Submit from './Submit.svelte';
+	import Program from './Program.svelte'
 
 	// subpages setup
 	let currentRoute = window.location.pathname;
@@ -33,6 +34,7 @@
 
 {#if currentRoute === '/submit'}
   	<Submit />
+	<Program />
 	<Contact />
 
 {:else}
