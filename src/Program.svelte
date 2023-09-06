@@ -3,12 +3,12 @@
   
     function generateRow(day, event) {
       let subeventHtml = event.subevent ? `
-        <tr>
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td></td>    
-            <td class="uk-text-bold">${event.subevent}</td>
+        <tr >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eus-subevent">${event.subevent}</td>
         </tr>
         ` : '';
 
@@ -22,7 +22,7 @@
             <td>—</td>
             <td>${event.endTime}</td>
             <td class="eus-triplet">
-              ${event.event.map(e => `<div class="eus-flex1">${e}</div>`).join('')}
+              ${event.event.map(e => `<div class="eus-flex1 eus-subevent">${e}</div>`).join('')}
             </td>
           </tr>
         `;

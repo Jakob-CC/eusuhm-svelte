@@ -65,6 +65,11 @@ export const eventSchedule = {
       event: 'Panel Discussion: Lessons Learnt for Acting on the Ground'
     },
     {
+      startTime: '6:00',
+      endTime: '7:00',
+      event: 'Break'
+    },
+    {
       startTime: '7:00',
       endTime: '9:00',
       event: 'Get Together: Reithalle Schiffsbauergasse'
@@ -84,7 +89,7 @@ export const eventSchedule = {
     {
       startTime: '9:30',
       endTime: '11:00',
-      subevent:'3 Parallel Sessions',
+      subevent:'Parallel Sessions',
       event: [
         'Data for Action Monitoring Health in Children, Adolescents, and Students',
         'Intersectoral Interventions: Public Health on Site',
@@ -108,12 +113,9 @@ export const eventSchedule = {
       event: 'Lunch Break'
     },
     {
-      startTime: "",
-      endTime: "",
-      event: "Pharma Symposium"},
-    {
       startTime: '1:00',
       endTime: '1:45',
+      subevent: "Pharma Symposium",
       event: [
         'Improving HPV Vaccination in Europe - Lessons Learnt',
         'Vision and Hearing Screening'
@@ -122,7 +124,8 @@ export const eventSchedule = {
     {
       startTime: '2:00',
       endTime: '3:30',
-      event: 'Plenary Session'
+      subevent: 'Plenary Session',
+      event: 'Digital World and Impact on Children’s and Adolescents’ Wellbeing'
     },
     {
       startTime: '3:30',
@@ -132,23 +135,30 @@ export const eventSchedule = {
     {
       startTime: '4:30',
       endTime: '6:00',
-      event: '10 Interactive Rooms (Rotation after 40 min) Topics'
+      subevent: '10 Interactive Rooms (Rotation after 40 min) Topics',
+      event: 'Sharing Experience -Take Away Messages'
     },
     {
       startTime: '6:00',
       endTime: '7:00',
       event: 'General Assembly'
-    }
+    },
+    {
+      startTime: '7:00',
+      endTime: '8:00',
+      event: 'Break'
+    },
+    {
+      startTime: '8:00',
+      endTime: '11:00',
+      event: 'Gala Dinner',
+    },
   ],
   'Saturday': [
     {
-      startTime: '8:30',
-      endTime: '9:15',
-      event: 'Early Bird Pharma Symposium'
-    },
-    {
       startTime: '9:00',
       endTime: '9:30',
+      subevent: 'Early Bird Pharma Symposium',
       event: ['ADHD', 'New Vaccines']
     },
     {
@@ -159,6 +169,7 @@ export const eventSchedule = {
     {
       startTime: '9:00',
       endTime: '11:30',
+      subevent: 'Parallel Sessions',
       event: ['Inclusion of Children with Chronic Health Conditions: Models of Good Practice', 'Gender Dysphoria']
     },
     {
@@ -183,7 +194,7 @@ export const eventSchedule = {
     },
     {
       startTime: '2:30',
-      endTime: '2:31', // Or some other arbitrary close time, just to signify the end
+      endTime: '3:00', // Or some other arbitrary close time, just to signify the end
       event: 'Farewell'
     }
   ]

@@ -162,8 +162,9 @@ h1 {
     }
 
     .eus-subevent{
-        color: white;
-        background-color: var(--color-orange);
+        /* color: white; */
+        background-color: rgb(233, 242, 231);
+        border: none;
     }
 
 }
