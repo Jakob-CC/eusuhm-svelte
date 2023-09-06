@@ -109,8 +109,10 @@ h1 {
 
 
 .eus-table {
-    /* color: red; */
     border-collapse: collapse;
+    tr:nth-child(odd) {
+        background-color: rgba(0,0,0,0.03);
+    }
 }
 
 
@@ -147,7 +149,7 @@ h1 {
     /* agenda */
     td:nth-child(5)
     {
-        text-align: center;
+        /* text-align: center; */
         font-size: x-large;
     }
     .eus-flex1{
@@ -157,6 +159,11 @@ h1 {
     .eus-flex1:nth-child(2){
         border-left: 1px solid var(--color-main);
         border-right: 1px solid var(--color-main);
+    }
+
+    .eus-subevent{
+        color: white;
+        background-color: var(--color-orange);
     }
 
 }

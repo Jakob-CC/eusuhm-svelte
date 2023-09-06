@@ -84,6 +84,7 @@ export const eventSchedule = {
     {
       startTime: '9:30',
       endTime: '11:00',
+      subevent:'3 Parallel Sessions',
       event: [
         'Data for Action Monitoring Health in Children, Adolescents, and Students',
         'Intersectoral Interventions: Public Health on Site',
@@ -98,8 +99,8 @@ export const eventSchedule = {
     {
       startTime: '11:30',
       endTime: '1:00',
-      event: '10 Interactive Rooms (Rotation after 40 min) Topics',
-      subevent: 'Bridging Health and Education Gaps: Lessons Learnt!',
+      subevent: '10 Interactive Rooms (Rotation after 40 min) Topics',
+      event: 'Bridging Health and Education Gaps: Lessons Learnt!',
     },
     {
       startTime: '1:00',

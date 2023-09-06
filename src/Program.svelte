@@ -2,9 +2,20 @@
     import { eventSchedule } from './Store.js';
   
     function generateRow(day, event) {
+      let subeventHtml = event.subevent ? `
+        <tr>
+            <td></td>    
+            <td></td>    
+            <td></td>    
+            <td></td>    
+            <td class="uk-text-bold">${event.subevent}</td>
+        </tr>
+        ` : '';
+
       if (Array.isArray(event.event)) {
         // It's a parallel session
         return `
+          ${subeventHtml}
           <tr>
             <td>${day}</td>
             <td>${event.startTime}</td>
@@ -15,17 +26,17 @@
             </td>
           </tr>
         `;
-    
       } else {
         // It's a single event
         return `
-          <tr>
+        ${subeventHtml}
+        <tr>
             <td>${day}</td>
             <td>${event.startTime}</td>
             <td>—</td>
             <td>${event.endTime}</td>
             <td>${event.event}</td>
-          </tr>
+        </tr>
         `;
       }
     }
