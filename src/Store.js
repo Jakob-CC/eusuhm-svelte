@@ -9,6 +9,13 @@ export const navbarlinks = [
   ["Submit", `${basePath}/submit`, "_self"]
 ];
 
+export const topbuttons = [
+  "3. to 5. of October 2024",
+  "Register",
+  "Hand in Abstract",
+  "Program"
+]
+
 export const topics = [
   "Health monitoring and health promotion — data for action",
   "Early childhood interventions — community networking",

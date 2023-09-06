@@ -1,5 +1,5 @@
 <script>
-    import {objectives, topics, euscolors, eventSchedule} from './Store.js'
+    import {objectives, topics, euscolors, topbuttons} from './Store.js'
 </script>
 
 
@@ -15,6 +15,21 @@
           <h1 class="uk-heading-large"> 22nd&nbsp;EUSUHM Congress </h1>
           <!-- <h2 class="uk-padding uk-padding-remove-top">on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2> -->
         </div>
+    </section>
+    <section style="position:relative; top:-100px" class="uk-padding">
+      <article>
+        <div class="uk-grid uk-grid-match uk-child-width-1-4@s" uk-grid>
+          {#each topbuttons as objective, i}
+            <div class="eus-clip">
+              <!-- euscolors contains also darker shades. the first three are the main colors. so length-darkshades -->
+              <!-- the first color should not be green, so i+n -->
+              <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}" class="uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center">
+                <h2 class="uk-text-bold">{objective}</h2>
+              </div>
+            </div>
+          {/each}    
+        </div>
+      </article>
     </section>
     <!-- congress Introduction -->
     <article id="about" class="uk-padding uk-margin-xlarge">
