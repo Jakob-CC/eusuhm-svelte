@@ -1,3 +1,5 @@
+import { writable } from 'svelte/store';
+
 const basePath = window.location.origin;
 export const navbarlinks = [
   ["Home", `${basePath}/`, "_self"],
@@ -32,7 +34,8 @@ export const euscolors = [
   'rgb(0, 129, 54)',
 ];
 
-export const eventSchedule = {
+export const eventSchedule = writable({
+// export const eventSchedule = {
   'Thursday': [
     {
       startTime: '1:00',
@@ -198,4 +201,4 @@ export const eventSchedule = {
       event: 'Farewell'
     }
   ]
-};
+});

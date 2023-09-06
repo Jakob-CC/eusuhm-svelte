@@ -113,6 +113,7 @@ h1 {
     tr:nth-child(odd) {
         background-color: rgba(0,0,0,0.03);
     }
+    min-width: 100%;
 }
 
 
@@ -165,6 +166,10 @@ h1 {
         /* color: white; */
         background-color: rgb(233, 242, 231);
         border: none;
+    }
+
+    .eus-subevent-title{
+        font-weight: bolder;
     }
 
 }
