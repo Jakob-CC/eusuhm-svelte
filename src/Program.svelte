@@ -6,7 +6,7 @@
     /* Your existing styles here */
   </style>
   
-  <section class="uk-padding uk-margin-xlarge">
+  <section id="program" class="uk-padding uk-margin-xlarge">
     <h1 class="uk-text-center uk-heading-large">Program</h1>
     
     {#each Object.keys($eventSchedule) as day}

@@ -3,18 +3,19 @@ import { writable } from 'svelte/store';
 const basePath = window.location.origin;
 export const navbarlinks = [
   ["Home", `${basePath}/`, "_self"],
-  ["About", `${basePath}/#about`, "_self"],
-  ["EUSUHM", "https://www.eusuhm.org", "_blank"],
-  ["Contact", `${basePath}/#contact`, "_self"],
-  ["Submit", `${basePath}/submit`, "_self"]
+  ["About The Congress", `${basePath}/#about`, "_self"],
+  ["Accomodation", `${basePath}/accomodation`, "_self"],
+  // ["Contact", `${basePath}/#contact`, "_self"],
+  // ["Submit", `${basePath}/submit`, "_self"]
 ];
 
 export const topbuttons = [
-  "3. to 5. of October 2024",
-  "Register",
-  "Hand in Abstract",
-  "Program"
-]
+  // { label: "3rd to 5th of October 2024", url: "#date" },
+  { label: "Registration",        url: "/registration" },
+  { label: "Abstract Submission", url: "/submit" },
+  { label: "Program Overview",    url: "/submit#program" }
+];
+
 
 export const topics = [
   "Health monitoring and health promotion — data for action",
