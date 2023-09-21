@@ -9,25 +9,51 @@
   <section id="program" class="uk-padding uk-margin-xlarge">
     <h1 class="uk-text-center uk-heading-large">Program</h1>
     
+
+
     {#each Object.keys($eventSchedule) as day}
       <h3 class="uk-text-center uk-card uk-card-primary">{day}</h3>
       <table class="eus-table uk-margin-large-top">
         {#each $eventSchedule[day] as event, index}
+          
+        
           {#if event.subevent}
-            <tr>
+              
+        
+              <tr class="
+                          eus-subevent-row
+                          {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
+              ">
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-              <td class="eus-subevent eus-subevent-title">{event.subevent}</td>
+  
+              <td class="eus-subevent eus-subevent-title">
+                {#if typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('interactive rooms')}
+                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> &emsp;More Information</a>
+                {:else}
+                  {event.subevent}
+                {/if}
+              </td>
+              
             </tr>
+
           {/if}
-          <tr>
+          <tr class="
+                {event.subevent ? 'eus-subevent-row' : ''}
+                {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
+          ">
             <td>{day}</td>
             <td>{event.startTime}</td>
             <td>—</td>
             <td>{event.endTime}</td>
-            <td class="{event.subevent ? 'eus-subevent' : ''}">
+            <td class="
+              <!-- Subevent formatting -->
+              {event.subevent ? 'eus-subevent' : ''}
+              <!-- Break formatting -->
+              {typeof event.event === 'string' && event.event.toLowerCase().includes('break') ? 'eus-programbreak' : ''}
+            ">
               {#if Array.isArray(event.event)}
                 <div class="eus-triplet eus-subevent">
                   {#each event.event as e}
@@ -42,6 +68,10 @@
         {/each}
       </table>
     {/each}
+
+
+
+
   </section>
   <section id="interactiverooms" class="uk-padding uk-margin-xlarge">
     <h1 class="uk-text-center uk-heading-large">Interactive Rooms</h1>
