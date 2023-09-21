@@ -67,6 +67,10 @@ h1 {
     min-height: 300px;
 }
 
+.eus-height-100 {
+    min-height: 150px;
+}
+
 .red {
     color: red;
 }
@@ -181,3 +185,7 @@ h1 {
 .eus-flex1{
     flex: 1;
 }
+
+.program-break {
+    background-color: red; 
+  }

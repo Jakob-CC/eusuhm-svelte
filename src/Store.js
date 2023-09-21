@@ -1,5 +1,7 @@
 import { writable } from 'svelte/store';
 
+let eventid = 1381;
+
 const basePath = window.location.origin;
 export const navbarlinks = [
   ["Home", `${basePath}/`, "_self"],
@@ -11,8 +13,8 @@ export const navbarlinks = [
 
 export const topbuttons = [
   // { label: "3rd to 5th of October 2024", url: "#date" },
-  { label: "Registration",        url: "/registration" },
-  { label: "Abstract Submission", url: "/submit" },
+  { label: "Registration",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
+  { label: "Abstract Submission", url: "https://abstract.cc2c.de/?termin=" + eventid },
   { label: "Program Overview",    url: "/submit#program" }
 ];
 
@@ -41,6 +43,33 @@ export const euscolors = [
   // darker shades
   'rgb(0, 129, 54)',
 ];
+
+
+export const interactiveRooms = writable([
+  "Health Monitoring and Health Promotion - Data for Action",
+  "Early Childhood and Early Support",
+  "Inclusion of Children with Chronic Health Conditions in Schools: Collaboration Between the Education and Health Sector",
+  "Special Education and Health Care for Children with Chronic conditions",
+  "Mental Health and Wellbeing in Adolescents and Students",
+  "School Absenteeism – Cooperation Needs between the Educational and Health Sector",
+  "Health Promotion Projects in Schools – Sharing Experience on the Ground",
+  "School Health Services in Europe: Guidelines, Researches, Challenges",
+  "Health Promotion in Students at Universities",
+  "Qualification of School Doctors and School Nurses - Guidelines, Curricula",
+]);
+
+export const hottopics = writable ([
+  "Sustainable Health in Children and Students – Reduce the Gap!",
+  "Bridging Health and Education Gaps: Lessons Learnt!",
+  "Digital World and Impact on Children’s and Adolescents’ Wellbeing",
+  "Data for Action: Monitoring Health in Children, Adolescents and Students",
+  "Intersectoral Interventions: Public Health on Site",
+  "School Nurses and Networking",
+  "Improving HPV Vaccination in Europe - Lessons Learnt",
+  "Vision and Hearing Screening",
+  "Gender Dysphoria",
+  "Inclusion of Children with Chronic Health Conditions: Models of Good Practice",
+  ]);
 
 export const eventSchedule = writable({
 // export const eventSchedule = {

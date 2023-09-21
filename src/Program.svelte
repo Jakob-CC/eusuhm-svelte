@@ -1,5 +1,5 @@
 <script>
-    import { eventSchedule } from './Store.js';
+    import { euscolors, eventSchedule, interactiveRooms } from './Store.js';
   </script>
   
   <style>
@@ -43,4 +43,22 @@
       </table>
     {/each}
   </section>
-  
+  <section id="interactiverooms" class="uk-padding uk-margin-xlarge">
+    <h1 class="uk-text-center uk-heading-large">Interactive Rooms</h1>
+    <h3>Bridging Health and Education Gaps: Lessons Learnt
+      <br>Friday: 11:30 — 1:00
+      <br>Rotation after 40 Minutes
+    </h3>
+    <!-- Card Grid -->
+    <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top" uk-grid>
+        {#each $interactiveRooms as room, i}
+        <!-- {#each $hottopics as topic, i} -->
+          <div class="eus-clip">
+            <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}; color: black;" 
+                class="eus-height-100 uk-card uk-card-hover uk-card-body uk-card-small uk-flex uk-flex-middle uk-flex-center">
+              <p class="eus-text-large uk-margin-remove">{room}</p>
+            </div>
+          </div>
+        {/each}
+      </div>
+  </section>

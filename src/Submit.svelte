@@ -1,20 +1,5 @@
 <script>
-    import { euscolors } from "./Store";
-    let hottopics = [
-        "Sustainable Health in Children and Students – Reduce the Gap!",
-        "Bridging Health and Education Gaps: Lessons Learnt!",
-        "Digital World and Impact on Children’s and Adolescents’ Wellbeing",
-        "Data for Action: Monitoring Health in Children, Adolescents and Students",
-        "Intersectoral Interventions: Public Health on Site",
-        
-        "School Nurses and Networking",
-        "Improving HPV Vaccination in Europe - Lessons Learnt",
-        "Vision and Hearing Screening",
-        "Gender Dysphoria",
-        "Inclusion of Children with Chronic Health Conditions: Models of Good Practice",
-        
-        
-        ];
+    import { euscolors, hottopics } from "./Store.js";
 </script>
 
 <!-- Submit Component -->
@@ -35,7 +20,7 @@
   
         <!-- Card Grid -->
         <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top" uk-grid>
-          {#each hottopics as topic, i}
+          {#each $hottopics as topic, i}
             <div class="eus-clip">
               <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}; color: black;" class="eus-height-300 uk-card uk-card-hover uk-card-body uk-card-small uk-flex uk-flex-middle uk-flex-center">
                 <p class="eus-text-xxlarge uk-margin-remove">{topic}</p>
