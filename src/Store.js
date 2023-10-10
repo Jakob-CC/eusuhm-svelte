@@ -5,7 +5,7 @@ let eventid = 1381;
 const basePath = window.location.origin;
 export const navbarlinks = [
   ["Home", `${basePath}/`, "_self"],
-  ["About The Congress", `${basePath}/#about`, "_self"],
+  ["About The Congress", `${basePath}/about`, "_self"],
   ["Accomodation", `${basePath}/accomodation`, "_self"],
   // ["Contact", `${basePath}/#contact`, "_self"],
   // ["Submit", `${basePath}/submit`, "_self"]

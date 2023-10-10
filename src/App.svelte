@@ -10,6 +10,8 @@
 	import Submit from './Submit.svelte';
 	import Program from './Program.svelte'
 	import Accomodation from './Accomodation.svelte';
+	import About from './About.svelte';
+	import Jumbotron from './Jumbotron.svelte';
 
 	// subpages setup
 	let currentRoute = window.location.pathname;
@@ -37,8 +39,12 @@
 	<Accomodation />
 	<Contact />
 	<Footer />
+	{:else if currentRoute === '/about'}
+	<Jumbotron />
+	<About />
 
 {:else}
+  <Jumbotron />
   <Landing />
   <Contact />
   <Footer />
