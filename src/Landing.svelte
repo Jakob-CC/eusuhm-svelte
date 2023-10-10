@@ -14,31 +14,33 @@
         
     {#each Object.entries(data) as [section, details], index}
     <!-- h1 -->
-    <h1>{section}</h1>
-      {#each Object.entries(details) as [key, value]}
-          <!-- {key} -->
+      {#if section!==notdisplayed}
+        <h1>{section}</h1>
+        {#each Object.entries(details) as [key, value]}
+        <!-- {key} -->
           {#if Array.isArray(value)}
-              <!-- Inhalt wie "Congress Compact" -->
-              {#each value as item}
-                <p>{item}</p>
-              {/each}
-          {:else if typeof value === 'object'}
-              {#each Object.entries(value) as [innerKey, innerValue],index}
-                  {#if index===0}
-                     <h2>{innerValue}</h2>
-                  {:else}
-                    <ul class="uk-list">
-                      {#each innerValue as person}
-                         <li>{person}</li>
-                      {/each}
-                    </ul>
-                  {/if}
-                     
-              {/each}
-          {:else}
-            <p>{value}</p>
-          {/if}
-      {/each}
+                <!-- Inhalt wie "Congress Compact" -->
+                {#each value as item}
+                  <p>{item}</p>
+                {/each}
+            {:else if typeof value === 'object'}
+                {#each Object.entries(value) as [innerKey, innerValue],index}
+                    {#if index===0}
+                      <h2>{innerValue}</h2>
+                    {:else}
+                      <ul class="uk-list">
+                        {#each innerValue as person}
+                          <li>{person}</li>
+                        {/each}
+                      </ul>
+                    {/if}
+                      
+                {/each}
+            {:else}
+              <p>{value}</p>
+            {/if}
+        {/each}
+      {/if}
     {/each}
   </article>
 </main>
