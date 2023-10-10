@@ -6,7 +6,7 @@ export const congressdata = writable({
         organisation: 'TBD'
     },
     'Certification': {
-        content:'Certification of the event will be applied for at the Hamburg Medical Association "Ärztekammer Hamburg".'
+        content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
     },
     'Programme Committee': [
         {
