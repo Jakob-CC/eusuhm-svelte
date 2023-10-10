@@ -1,30 +1,28 @@
 <!-- Contact Section -->
-<section id="contact" class="uk-section uk-height-viewport uk-background-muted uk-padding-large uk-flex uk-flex-middle">
+<section id="contact" class="uk-section uk-background-muted uk-padding-large uk-flex uk-flex-middle">
     <article class="uk-container uk-container-expand">
-
-        <!-- Heading -->
-        <h1 class="uk-text-center uk-heading-large   uk-margin-large-bottom">Contact Us</h1>
-
         <div class="uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-2@m uk-margin-large-top" uk-grid>
-            
-
             <!-- Contact Details -->
             <div class="uk-padding-large">
+                <h1 class="uk-heading-large   uk-margin-large-bottom">Contact Us</h1>
                 <h2 class="uk-text-bold uk-margin-small-bottom">Get in Touch</h2>
                 <p class="uk-text-lead uk-margin-small-bottom">
                     If you have any questions or&nbsp;suggestions, don't&nbsp;hesitate&nbsp;to&nbsp;reach&nbsp;out.
                 </p>
                 <address class="uk-margin-small-top">
-                    <p class="uk-margin-remove uk-text-bold">European Union for <br> School and University <br> Health and Medicine</p>
-                    <p class="uk-margin-remove">Email <a class="uk-link-muted" href="mailto:info@eusuhm.org">info@eusuhm.org</a></p>
-                </address>
+                    <p class="uk-margin-remove uk-text-bold">Organisation by</p>
+                    <p class="uk-margin-remove uk-text-bold">Congress Compact 2C GmbH</p>
+                    <!-- <p class="uk-margin-remove uk-text-bold">European Union for <br> School and University <br> Health and Medicine</p> -->
+                    <p class="uk-margin-remove">Email <a class="uk-link-muted" href="mailto:info@congress-compact.de">info@congress-compact.de</a></p>
+                </address>    
             </div>
 
 
 
 
+
             <!-- Contact Form -->
-            <div class="uk-padding-large uk-background-muted uk-border-rounded">
+            <!-- <div class="uk-padding-large uk-background-muted uk-border-rounded">
                 <form class="uk-form-stacked">
                     <div class="">
                         <label class="uk-form-label uk-text-muted " for="contact-name">Name</label>
@@ -49,6 +47,7 @@
                     </div>
                 </form>
             </div>
+             -->
         </div>
     </article>
 </section>

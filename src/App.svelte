@@ -23,12 +23,6 @@
 		});
 	});
 
-	// some local testing scripts
-	let content1=1;
-	let onClick = () => {
-		content1+=1;
-	}
-
 </script>
 
 <Navbar/>
@@ -47,7 +41,6 @@
 {:else}
   <Landing />
   <Contact />
-  <button on:click={onClick}>{content1}</button>
   <Footer />
   {/if}
 
