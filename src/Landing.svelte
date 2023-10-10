@@ -1,10 +1,10 @@
 <script>
     import { congressdata } from './CongressData.js';
-    import {objectives, topics, euscolors, topbuttons} from './Store.js';
     let data;
     congressdata.subscribe(value => {
       data = value;
     });
+    let notdisplayed = "Wissenschaftliche Leitung";
 </script>
 
 
@@ -15,30 +15,30 @@
     {#each Object.entries(data) as [section, details], index}
     <!-- h1 -->
     <h1>{section}</h1>
-    <ul class="uk-list">
       {#each Object.entries(details) as [key, value]}
-        <li>
-          <!-- "Name" etc -->
-          {key}
+          <!-- {key} -->
           {#if Array.isArray(value)}
-            <ul class="uk-list">
               <!-- Inhalt wie "Congress Compact" -->
               {#each value as item}
-                <li>{item}</li>
+                <p>{item}</p>
               {/each}
-            </ul>
           {:else if typeof value === 'object'}
-            <ul>
-              {#each Object.entries(value) as [innerKey, innerValue]}
-                <li>{innerKey}: {innerValue}</li>
+              {#each Object.entries(value) as [innerKey, innerValue],index}
+                  {#if index===0}
+                     <h2>{innerValue}</h2>
+                  {:else}
+                    <ul class="uk-list">
+                      {#each innerValue as person}
+                         <li>{person}</li>
+                      {/each}
+                    </ul>
+                  {/if}
+                     
               {/each}
-            </ul>
           {:else}
-            {value}
+            <p>{value}</p>
           {/if}
-        </li>
       {/each}
-    </ul>
     {/each}
   </article>
 </main>
