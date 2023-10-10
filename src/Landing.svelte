@@ -13,7 +13,6 @@
   <article id="" class="uk-padding uk-padding-remove-bottom">
         
     {#each Object.entries(data) as [section, details], index}
-    <!-- h1 -->
       {#if section!==notdisplayed}
         <h1>{section}</h1>
         {#each Object.entries(details) as [key, value]}
