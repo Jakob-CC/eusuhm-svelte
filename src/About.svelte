@@ -72,19 +72,19 @@
     <article>
         <h1 class="uk-text-center uk-margin-large-top uk-heading-small">Location</h1>
         <p class="uk-text-large">
-            The 22nd EUSUHM congress will take place in the <a class="uk-link-muted" href="https://oberlin-schule.de/" target='_blank' rel='noopener'>Oberlin-Schule Potsdam</a>, 
-            which is a dedicated educational and living space for children and adolescents 
+            The 22nd EUSUHM congress will take place in the <a class="uk-link-muted" href="https://oberlin-schule.de/" target='_blank' rel='noopener'>Oberlin-Schule Potsdam</a>,
+            which is a dedicated educational and living space for children and adolescents
             with diverse disabilities. <a class="uk-link-muted" href="https://www.potsdam-tourism.com/en/home" target='_blank' rel='noopener'>Potsdam</a> is home to several UNESCO World Heritage Sites,
-            including Sanssouci Palace, a symbol of the Age of Enlightenment, 
+            including Sanssouci Palace, a symbol of the Age of Enlightenment,
             and the <a class="uk-link-muted" href="https://www.spsg.de/schloesser-gaerten/objekt/schloss-cecilienhof/" target='_blank' rel='noopener'>Cecilienhof</a>, where the post-World War II Europe was restructured.
         </p>
         <h1 class="uk-text-center uk-margin-large-top uk-heading-small">Cooperating Partners</h1>
         <p class="uk-text-large">
-            The EUSUHM congress and scientific program is set up in close cooperation with the 
+            The EUSUHM congress and scientific program is set up in close cooperation with the
             German Federal Association of Doctors in the Public Health Service <a class="uk-link-muted" href="https://www.bvoegd.de/" target="_blank" rel="noopener">(BVÖGD), </a>
             the German Association of Public Health <a class="uk-link-muted" href="https://www.dgoeg.de/" target="_blank" rel="noopener">(DGÖG) </a>
             and the 
-            Swiss Association of Specialists in School Health Services <a class="uk-link-muted" href="https://www.scolarmed.ch/index.php/de/" target='_blank' rel='noopener'>(SCOLARMED).</a>
+            Swiss Association of Specialists in&nbsp;School Health Services <a class="uk-link-muted" href="https://www.scolarmed.ch/index.php/de/" target='_blank' rel='noopener'>(SCOLARMED).</a>
         </p>
         <h1 class="uk-heading-large uk-text-center uk-margin-large uk-padding-large">Looking forward to&nbsp;seeing you</h1>
     </article>
