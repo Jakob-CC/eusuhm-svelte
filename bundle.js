@@ -537,8 +537,8 @@ var app = (function () {
 
     const topbuttons = [
       // { label: "3rd to 5th of October 2024", url: "#date" },
-      { label: "Registration",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
-      { label: "Abstract Submission", url: "https://abstract.cc2c.de/?termin=" + eventid },
+      { label: "Registration 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
+      { label: "Abstract Submission 15.01.2024", url: "https://abstract.cc2c.de/?termin=" + eventid },
       { label: "Program Overview",    url: "/submit#program" }
     ];
 
@@ -1357,7 +1357,8 @@ var app = (function () {
             organisation: 'TBD'
         },
         'Certification': {
-            content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
+            // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
+            content:'The event’s accreditation will be recognized by a Medical Association'
         },
         'Programme Committee': [
             {
@@ -1378,7 +1379,7 @@ var app = (function () {
             address: 'Rudolf-Breitscheid-Straße 24',
             city: '14482 Potsdam',
         },
-        'Organisation': {
+        'Organizer': {
             company: 'Congress Compact 2C GmbH Congress Compact 2C GmbH',
             contact: 'Gina Braun',
             address: 'Joachimsthaler Straße 31-32, 10719 Berlin',
@@ -1454,7 +1455,7 @@ var app = (function () {
     			}
 
     			each_1_anchor = empty();
-    			add_location(h1, file$5, 16, 8, 449);
+    			add_location(h1, file$5, 16, 8, 424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -1515,27 +1516,28 @@ var app = (function () {
     	return block;
     }
 
-    // (38:12) {:else}
+    // (41:12) {:else}
     function create_else_block_1$1(ctx) {
-    	let p;
     	let t_value = /*value*/ ctx[7] + "";
     	let t;
+    	let br;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
     			t = text(t_value);
-    			add_location(p, file$5, 38, 14, 1297);
+    			br = element("br");
+    			add_location(br, file$5, 41, 21, 1380);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, br, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*data*/ 1 && t_value !== (t_value = /*value*/ ctx[7] + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(br);
     		}
     	};
 
@@ -1543,7 +1545,7 @@ var app = (function () {
     		block,
     		id: create_else_block_1$1.name,
     		type: "else",
-    		source: "(38:12) {:else}",
+    		source: "(41:12) {:else}",
     		ctx
     	});
 
@@ -1552,7 +1554,8 @@ var app = (function () {
 
     // (25:48) 
     function create_if_block_2$2(ctx) {
-    	let each_1_anchor;
+    	let div;
+    	let t;
     	let each_value_3 = Object.entries(/*value*/ ctx[7]);
     	validate_each_argument(each_value_3);
     	let each_blocks = [];
@@ -1563,20 +1566,26 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div = element("div");
+
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			t = space();
+    			attr_dev(div, "class", "uk-grid");
+    			add_location(div, file$5, 25, 14, 773);
     		},
     		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				if (each_blocks[i]) {
-    					each_blocks[i].m(target, anchor);
+    					each_blocks[i].m(div, null);
     				}
     			}
 
-    			insert_dev(target, each_1_anchor, anchor);
+    			append_dev(div, t);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*Object, data*/ 1) {
@@ -1592,7 +1601,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_3$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(div, t);
     					}
     				}
 
@@ -1604,8 +1613,8 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -1690,10 +1699,9 @@ var app = (function () {
     	return block;
     }
 
-    // (29:20) {:else}
+    // (31:20) {:else}
     function create_else_block$2(ctx) {
     	let ul;
-    	let t;
     	let each_value_4 = /*innerValue*/ ctx[14];
     	validate_each_argument(each_value_4);
     	let each_blocks = [];
@@ -1710,9 +1718,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			t = space();
     			attr_dev(ul, "class", "uk-list");
-    			add_location(ul, file$5, 29, 22, 1003);
+    			add_location(ul, file$5, 31, 22, 1054);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1722,8 +1729,6 @@ var app = (function () {
     					each_blocks[i].m(ul, null);
     				}
     			}
-
-    			append_dev(ul, t);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*Object, data*/ 1) {
@@ -1739,7 +1744,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_4(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(ul, t);
+    						each_blocks[i].m(ul, null);
     					}
     				}
 
@@ -1760,14 +1765,14 @@ var app = (function () {
     		block,
     		id: create_else_block$2.name,
     		type: "else",
-    		source: "(29:20) {:else}",
+    		source: "(31:20) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (27:20) {#if index===0}
+    // (29:20) {#if index===0}
     function create_if_block_3(ctx) {
     	let h2;
     	let t_value = /*innerValue*/ ctx[14] + "";
@@ -1777,7 +1782,7 @@ var app = (function () {
     		c: function create() {
     			h2 = element("h2");
     			t = text(t_value);
-    			add_location(h2, file$5, 27, 22, 929);
+    			add_location(h2, file$5, 29, 22, 980);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -1795,14 +1800,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(27:20) {#if index===0}",
+    		source: "(29:20) {#if index===0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (31:24) {#each innerValue as person}
+    // (33:24) {#each innerValue as person}
     function create_each_block_4(ctx) {
     	let li;
     	let t_value = /*person*/ ctx[16] + "";
@@ -1812,7 +1817,7 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$5, 31, 26, 1105);
+    			add_location(li, file$5, 33, 26, 1156);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1830,16 +1835,16 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(31:24) {#each innerValue as person}",
+    		source: "(33:24) {#each innerValue as person}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (26:16) {#each Object.entries(value) as [innerKey, innerValue],index}
+    // (27:16) {#each Object.entries(value) as [innerKey, innerValue],index}
     function create_each_block_3$1(ctx) {
-    	let if_block_anchor;
+    	let div;
 
     	function select_block_type_1(ctx, dirty) {
     		if (/*index*/ ctx[5] === 0) return create_if_block_3;
@@ -1851,19 +1856,21 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div = element("div");
     			if_block.c();
-    			if_block_anchor = empty();
+    			attr_dev(div, "class", "uk-width-1-3");
+    			add_location(div, file$5, 27, 18, 893);
     		},
     		m: function mount(target, anchor) {
-    			if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
+    			insert_dev(target, div, anchor);
+    			if_block.m(div, null);
     		},
     		p: function update(ctx, dirty) {
     			if_block.p(ctx, dirty);
     		},
     		d: function destroy(detaching) {
-    			if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
+    			if (detaching) detach_dev(div);
+    			if_block.d();
     		}
     	};
 
@@ -1871,7 +1878,7 @@ var app = (function () {
     		block,
     		id: create_each_block_3$1.name,
     		type: "each",
-    		source: "(26:16) {#each Object.entries(value) as [innerKey, innerValue],index}",
+    		source: "(27:16) {#each Object.entries(value) as [innerKey, innerValue],index}",
     		ctx
     	});
 
@@ -1880,25 +1887,21 @@ var app = (function () {
 
     // (22:16) {#each value as item}
     function create_each_block_2$1(ctx) {
-    	let p;
     	let t_value = /*item*/ ctx[10] + "";
     	let t;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
     			t = text(t_value);
-    			add_location(p, file$5, 22, 18, 701);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t);
+    			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*data*/ 1 && t_value !== (t_value = /*item*/ ctx[10] + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t);
     		}
     	};
 
@@ -2034,7 +2037,7 @@ var app = (function () {
     			}
 
     			attr_dev(article, "id", "");
-    			attr_dev(article, "class", "uk-padding uk-padding-remove-bottom");
+    			attr_dev(article, "class", "uk-padding");
     			add_location(article, file$5, 12, 2, 271);
     			attr_dev(main, "class", "uk-container");
     			add_location(main, file$5, 11, 0, 240);
@@ -4134,9 +4137,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(h2, "class", "uk-text-bold");
-    			add_location(h2, file, 28, 14, 1626);
+    			add_location(h2, file, 28, 14, 1640);
     			set_style(div0, "background-color", euscolors[(2 + /*i*/ ctx[2]) % (euscolors.length - 1)]);
-    			attr_dev(div0, "class", "uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center");
+    			attr_dev(div0, "class", "eus-topbutton uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center");
     			add_location(div0, file, 27, 12, 1454);
     			attr_dev(a, "href", /*button*/ ctx[0].url);
     			attr_dev(a, "rel", "noopener");
