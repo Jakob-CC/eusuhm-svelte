@@ -10,7 +10,7 @@
 
 <!-- MAIN CONTENT -->
 <main class="uk-container">
-  <article id="" class="uk-padding uk-padding-remove-bottom">
+  <article id="" class="uk-padding">
         
     {#each Object.entries(data) as [section, details], index}
       {#if section!==notdisplayed}
@@ -20,10 +20,12 @@
           {#if Array.isArray(value)}
                 <!-- Inhalt wie "Congress Compact" -->
                 {#each value as item}
-                  <p>{item}</p>
+                  {item}
                 {/each}
             {:else if typeof value === 'object'}
+              <div class="uk-grid">
                 {#each Object.entries(value) as [innerKey, innerValue],index}
+                  <div class="uk-width-1-3">
                     {#if index===0}
                       <h2>{innerValue}</h2>
                     {:else}
@@ -32,11 +34,12 @@
                           <li>{person}</li>
                         {/each}
                       </ul>
-                    {/if}
-                      
+                    {/if} 
+                  </div>
                 {/each}
+              </div>
             {:else}
-              <p>{value}</p>
+              {value}<br>
             {/if}
         {/each}
       {/if}

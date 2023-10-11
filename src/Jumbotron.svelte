@@ -25,7 +25,7 @@
           <!-- euscolors contains also darker shades. the first three are the main colors. so length-darkshades -->
           <!-- the first color should not be green, so i+n -->
           <a href="{button.url}" rel="noopener" target="_blank">
-            <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}" class="uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center">
+            <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}" class="eus-topbutton uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center">
               <h2 class="uk-text-bold">{button.label}</h2>
             </div>
           </a>

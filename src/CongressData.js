@@ -6,7 +6,8 @@ export const congressdata = writable({
         organisation: 'TBD'
     },
     'Certification': {
-        content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
+        // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
+        content:'The event’s accreditation will be recognized by a Medical Association'
     },
     'Programme Committee': [
         {
@@ -27,7 +28,7 @@ export const congressdata = writable({
         address: 'Rudolf-Breitscheid-Straße 24',
         city: '14482 Potsdam',
     },
-    'Organisation': {
+    'Organizer': {
         company: 'Congress Compact 2C GmbH Congress Compact 2C GmbH',
         contact: 'Gina Braun',
         address: 'Joachimsthaler Straße 31-32, 10719 Berlin',

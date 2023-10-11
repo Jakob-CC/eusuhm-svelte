@@ -220,3 +220,7 @@ tr:nth-child(n).eus-subevent-row {
         background-color: white !important;
         /* opacity: 80%; */
 }
+
+.eus-topbutton {
+    min-height: 190px;
+}
