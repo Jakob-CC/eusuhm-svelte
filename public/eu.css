@@ -195,7 +195,7 @@ h1 {
     flex: 1;
 }
 
-.eus-programbreak {
+.eus-Programmebreak {
     font-family: var(--font-serif);
     /* text-transform: uppercase; */
     letter-spacing: 0.5px;
@@ -211,7 +211,7 @@ tr:nth-child(n).eus-subevent-row {
     }
 }
 
-/* separating two parallel program blocks */
+/* separating two parallel Programme blocks */
 .eus-separator {
     border-bottom: 10px solid white;
 }

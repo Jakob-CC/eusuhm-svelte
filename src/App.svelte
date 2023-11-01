@@ -8,7 +8,7 @@
 	// sub sections
 	import Landing from './Landing.svelte';
 	import Submit from './Submit.svelte';
-	import Program from './Program.svelte'
+	import Programme from './Programme.svelte'
 	import Accomodation from './Accomodation.svelte';
 	import About from './About.svelte';
 	import Jumbotron from './Jumbotron.svelte';
@@ -31,13 +31,11 @@
 
 {#if currentRoute === '/submit'}
   	<Submit />
-	<Program />
-	<Contact />
+	<Programme />
 	<Footer />
 
 	{:else if currentRoute === '/accomodation'}
 	<Accomodation />
-	<Contact />
 	<Footer />
 	{:else if currentRoute === '/about'}
 	<Jumbotron />
@@ -46,7 +44,6 @@
 {:else}
   <Jumbotron />
   <Landing />
-  <Contact />
   <Footer />
   {/if}
 

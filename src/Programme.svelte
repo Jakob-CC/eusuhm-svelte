@@ -6,8 +6,8 @@
     /* Your existing styles here */
   </style>
   
-  <section id="program" class="uk-padding uk-margin-xlarge">
-    <h1 class="uk-text-center uk-heading-large">Program</h1>
+  <section id="Programme" class="uk-padding uk-margin-xlarge">
+    <h1 class="uk-text-center uk-heading-large">Programme</h1>
     
 
 
@@ -52,7 +52,7 @@
               <!-- Subevent formatting -->
               {event.subevent ? 'eus-subevent' : ''}
               <!-- Break formatting -->
-              {typeof event.event === 'string' && event.event.toLowerCase().includes('break') ? 'eus-programbreak' : ''}
+              {typeof event.event === 'string' && event.event.toLowerCase().includes('break') ? 'eus-Programmebreak' : ''}
             ">
               {#if Array.isArray(event.event)}
                 <div class="eus-triplet eus-subevent">

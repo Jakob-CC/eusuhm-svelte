@@ -22,7 +22,7 @@
             <!-- Health services for educational settings play a vital role in fostering the overall well-being of students and supporting their academic success by focusing on monitoring health, promoting mental well-being, and addressing specific health challenges.  -->
         <!-- </p> -->
         <p class="uk-text-lead">
-            The congress focuses on the disparities in health and healthcare access among European children and adolescents, taking into account the multiple impacts of the pandemic. It will explore numerous health-related initiatives and programs carried out in learning environments, primarily focusing on educational institutions.
+            The congress focuses on the disparities in health and healthcare access among European children and adolescents, taking into account the multiple impacts of the pandemic. It will explore numerous health-related initiatives and programmes carried out in learning environments, primarily focusing on educational institutions.
         </p>
     </article>
 
@@ -32,7 +32,7 @@
   <div class="eus-clip">
     <section class="eus-background-prime uk-background-muted uk-padding uk-margin-xlarge">
       <article class="uk-margin-large">
-        <h1 class="uk-text-center uk-heading-large">Program Highlights</h1>
+        <h1 class="uk-text-center uk-heading-large">Programme Highlights</h1>
   
         <!-- Card Grid -->
         <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top" uk-grid>
@@ -80,7 +80,7 @@
         </p>
         <h1 class="uk-text-center uk-margin-large-top uk-heading-small">Cooperating Partners</h1>
         <p class="uk-text-large">
-            The EUSUHM congress and scientific program is set up in close cooperation with the
+            The EUSUHM congress and scientific Programme is set up in close cooperation with the
             German Federal Association of Doctors in the Public Health Service <a class="uk-link-muted" href="https://www.bvoegd.de/" target="_blank" rel="noopener">(BVÖGD), </a>
             the German Association of Public Health <a class="uk-link-muted" href="https://www.dgoeg.de/" target="_blank" rel="noopener">(DGÖG) </a>
             and the 

@@ -15,7 +15,7 @@ export const topbuttons = [
   // { label: "3rd to 5th of October 2024", url: "#date" },
   { label: "Registration 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
   { label: "Abstract Submission 15.01.2024", url: "/submit"},
-  { label: "Program Overview",    url: "/submit#program" }
+  { label: "Programme Overview",    url: "/submit#Programme" }
 ];
 
 
