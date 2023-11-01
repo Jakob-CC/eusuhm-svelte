@@ -1,11 +1,9 @@
 <script>
     import { euscolors, eventSchedule, interactiveRooms } from './Store.js';
   </script>
-  
-  <style>
-    /* Your existing styles here */
-  </style>
-  
+
+<main class="uk-container">
+
   <section id="Programme" class="uk-padding uk-margin-xlarge">
     <h1 class="uk-text-center uk-heading-large">Programme</h1>
     
@@ -21,16 +19,16 @@
               
         
               <!-- Mit extra Regel für Plenary Session -->
-              <tr class="
+              <tr class=" 
                           eus-subevent-row
                           {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
               ">
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="no-border eus-subevent-title"></td>
+              <td class="no-border eus-subevent-title"></td>
+              <td class="no-border eus-subevent-title"></td>
+              <td class="no-border eus-subevent-title"></td>
   
-              <td class="eus-subevent eus-subevent-title">
+              <td class="eus-subevent eus-subevent-title no-border">
                 <!-- Extra Regel für Interactive Rooms -->
                 {#if typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('interactive rooms')}
                   {event.subevent} <a href="#interactiverooms" class="uk-text-small"> &emsp;More&nbsp;Information</a> 
@@ -50,7 +48,13 @@
           <!-- Datum -->
             <td>{day}</td>
             <td>{event.startTime}</td>
-            <td>—</td>
+            <!-- Den Bindestrich bei den Zeiten wegnehmen bei dem ersten Eintrag -->
+            {#if event.event.includes('Welcome')}
+              <td></td>
+            {:else}
+              <td>—</td>
+            {/if}
+            
             <td>{event.endTime}</td>
             <td class="
               <!-- Subevent formatting -->
@@ -96,3 +100,5 @@
         {/each}
       </div>
   </section>
+
+</main>

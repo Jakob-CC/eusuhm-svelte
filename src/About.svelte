@@ -9,7 +9,7 @@
     <!-- congress Introduction -->
     <article id="about" class="uk-padding uk-margin-xlarge">
         <!-- congress Invitation and Details -->
-        <h2 class="uk-text-light">
+        <h2 class="">
             The European Union for School and University Health and Medicine (<a class="uk-link-muted" href="https://eusuhm.org/" target='_blank' rel='noopener'>EUSUHM</a>)
             invites you to the 22nd Congress on
             <span class="uk-text-bolder">Sustainable Health in Children and Students — Reduce the GAP!</span>

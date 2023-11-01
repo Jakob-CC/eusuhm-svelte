@@ -63,8 +63,10 @@ h1 {
     /* background-color: rebeccapurple; */
 }
 
-.eus-text-50 {
-    font-size: 50px;
+.uk-nav li .eus-text-50 {
+    font-size: 40px;
+    line-height: 1;
+    padding: 20px 0;
 }
 
 .eus-text-xxlarge {
@@ -109,6 +111,7 @@ h1 {
 }
 
 .eus-potsdam-bg {
+    background-size: cover;
     background-image: url(img/photos/potsdam.jpg);
     background-color: rgb(117, 117, 117);
 }
@@ -137,6 +140,10 @@ h1 {
 .eus-table tr td {
     padding: 2px 0px 3px 15px;
     border-bottom: 1px solid var(--color-main);
+}
+
+.no-border{
+    border-bottom: none !important;
 }
 
 .eus-table tr 
@@ -169,7 +176,6 @@ td:nth-child(4)
         max-width: 0px; 
         padding-left: 5px;
 }
-/* 👾🎨🖌️ Alte Schule CSS */
 .eus-table tr td:nth-child(3){
     max-width: 0px; 
     padding-left: 5px;
@@ -203,7 +209,7 @@ td:nth-child(4)
 }
 
 /* 🎨 Titelstyling für Subevent */
-.eus-table tr .eus-subevent-title{
+.eus-subevent-title{
     font-weight: bolder;
     border-top: 4px solid var(--color-main);
     padding-top: 4px;

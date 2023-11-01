@@ -36,10 +36,12 @@
 
 	{:else if currentRoute === '/accomodation'}
 	<Accomodation />
+	<Contact />
 	<Footer />
 	{:else if currentRoute === '/about'}
-	<Jumbotron />
 	<About />
+	<Jumbotron />
+
 
 {:else}
   <Jumbotron />

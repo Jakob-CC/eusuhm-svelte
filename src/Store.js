@@ -75,10 +75,11 @@ export const eventSchedule = writable({
 // export const eventSchedule = {
   'Thursday': [
     {
-      startTime: '1:00',
-      endTime: '',
+      startTime: 'from',
+      endTime: '1:00',
       event: 'Welcome Reception'
     },
+
     {
       startTime: '2:00',
       endTime: '3:30',
@@ -215,7 +216,7 @@ export const eventSchedule = writable({
     {
       startTime: '12:00',
       endTime: '1:15',
-      event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators Wrap Up'
+      event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators  Wrap Up'
     },
     {
       startTime: '1:15',
