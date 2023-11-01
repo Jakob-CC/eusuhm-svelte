@@ -274,9 +274,6 @@ tr:nth-child(n).eus-subevent-row {
         border: none;
     }
 
-    .eus-width-1-1-mobile {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -285,6 +282,8 @@ tr:nth-child(n).eus-subevent-row {
     }
 }
     
+
+
 ::selection {
     background: var(--color-main);
 }
@@ -298,3 +297,10 @@ tr:nth-child(n).eus-subevent-row {
     border-top: 1px solid var(--color-main);
     padding-top: 8px;
 }
+
+
+.eus-grid-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
