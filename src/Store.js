@@ -27,7 +27,7 @@ export const topics = [
   "Inclusion of children with chronic health conditions in schools: collaboration of the health and education sector",
   "Health promotion efforts at universities",
   "Qualification of school doctors and school nurses",
-  "Improving Public Health Action in educational settings by enhancing networking"
+  "Improving public health action in educational settings by enhancing networking"
 ];
 
 export const objectives = [
@@ -76,7 +76,7 @@ export const eventSchedule = writable({
   'Thursday': [
     {
       startTime: '1:00',
-      endTime: 'End',
+      endTime: '',
       event: 'Welcome Reception'
     },
     {
@@ -182,11 +182,6 @@ export const eventSchedule = writable({
       startTime: '6:00',
       endTime: '7:00',
       event: 'General Assembly'
-    },
-    {
-      startTime: '7:00',
-      endTime: '8:00',
-      event: 'Break'
     },
     {
       startTime: '8:00',

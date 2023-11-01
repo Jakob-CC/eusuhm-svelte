@@ -28,8 +28,8 @@ export const congressdata = writable({
         address: 'Rudolf-Breitscheid-Straße 24',
         city: '14482 Potsdam',
     },
-    'Organizer': {
-        company: 'Congress Compact 2C GmbH Congress Compact 2C GmbH',
+    'Organiser': {
+        company: 'Congress Compact 2C GmbH',
         contact: 'Gina Braun',
         address: 'Joachimsthaler Straße 31-32, 10719 Berlin',
         phone: '+49 30 88727370',

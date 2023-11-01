@@ -44,6 +44,7 @@
 {:else}
   <Jumbotron />
   <Landing />
+
   <Footer />
   {/if}
 

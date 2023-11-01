@@ -20,6 +20,7 @@
           {#if event.subevent}
               
         
+              <!-- Mit extra Regel für Plenary Session -->
               <tr class="
                           eus-subevent-row
                           {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
@@ -30,8 +31,9 @@
               <td></td>
   
               <td class="eus-subevent eus-subevent-title">
+                <!-- Extra Regel für Interactive Rooms -->
                 {#if typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('interactive rooms')}
-                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> &emsp;More Information</a>
+                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> &emsp;More&nbsp;Information</a> 
                 {:else}
                   {event.subevent}
                 {/if}
@@ -40,10 +42,12 @@
             </tr>
 
           {/if}
+          <!-- Mit extra Regel für Plenary Session (Dopplung) -->
           <tr class="
                 {event.subevent ? 'eus-subevent-row' : ''}
                 {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
           ">
+          <!-- Datum -->
             <td>{day}</td>
             <td>{event.startTime}</td>
             <td>—</td>

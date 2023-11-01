@@ -11,9 +11,9 @@
 </article>
 <section id="top" class="eus-potsdam-bg  uk-section uk-section-primary uk-section-xlarge uk-text-center uk-light eus-background-prime">
     <div style="max-width:80%; margin-left: 40px" class="eus-clip uk-card uk-card-body uk-background-primary uk-padding-small ">
-      <h3>Congress Announcement</h3>
-      <h1 class="uk-heading-large"> 22nd&nbsp;EUSUHM Congress </h1>
-      <h3>3rd to 5th of October 2024</h3>
+      <p>Congress Announcement </p>
+      <h1 class="uk-heading-large"> 22nd EUSUHM Congress </h1>
+      <h3 class="eus-no-transform">3rd to 5th of October 2024</h3>
       <!-- <h2 class="uk-padding uk-padding-remove-top">on&nbsp;Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2> -->
     </div>
 </section>

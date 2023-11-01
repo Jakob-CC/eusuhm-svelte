@@ -4,10 +4,10 @@
         <div class="uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-2@m uk-margin-large-top" uk-grid>
             <!-- Contact Details -->
             <div class="uk-padding-large">
-                <h1 class="uk-heading-large   uk-margin-large-bottom">Contact Us</h1>
+                <h1 class="uk-heading-small">Contact Us</h1>
                 <h2 class="uk-text-bold uk-margin-small-bottom">Get in Touch</h2>
                 <p class="uk-text-lead uk-margin-small-bottom">
-                    If you have any questions or&nbsp;suggestions, don't&nbsp;hesitate&nbsp;to&nbsp;reach&nbsp;out.
+                    If you have any questions or&nbsp;suggestions, don't&nbsp;hesitate&nbsp;to&nbsp;contact&nbsp;us.
                 </p>
                 <address class="uk-margin-small-top">
                     <p class="uk-margin-remove uk-text-bold">Organisation by</p>

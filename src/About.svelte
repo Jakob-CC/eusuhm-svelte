@@ -86,7 +86,7 @@
             and the 
             Swiss Association of Specialists in&nbsp;School Health Services <a class="uk-link-muted" href="https://www.scolarmed.ch/index.php/de/" target='_blank' rel='noopener'>(SCOLARMED).</a>
         </p>
-        <h1 class="uk-heading-large uk-text-center uk-margin-large uk-padding-large">Looking forward to&nbsp;seeing you</h1>
+        <h1 class="uk-heading-small uk-text-center uk-margin-large uk-padding-large">Looking forward to&nbsp;seeing you</h1>
     </article>
 
 <!-- Signatories -->

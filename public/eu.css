@@ -22,6 +22,12 @@ html {
     /* color: #2e552e; */
 }
 
+/* Capitalise Headings */
+h1, h2, h3, h4, .uk-heading-large, .uk-heading-2xlarge, .uk-heading-xlarge, .uk-heading-medium, .uk-h1, .uk-h2, .uk-h3, .uk-h4 {
+    text-transform: capitalize;
+}
+
+
 html, body, .uk-text, h1, h2, li {
     font-family: var(--font-sans);
 }
@@ -125,67 +131,83 @@ h1 {
 
 /* Agenda */
 .eus-table tr {
-    td{
-        padding: 2px 0px 3px 15px;
-        border-bottom: 1px solid var(--color-main);
-    }
-
-    /* time */
-    td:nth-child(1),
-    td:nth-child(2),
-    td:nth-child(3),
-    td:nth-child(4)
-    {
-        color: var(--color-main);
-        font-size: small;
-        /* border: 1px solid red; */
-        width: 20px;
-    }
-    /* day (hidden) */
-    td:nth-child(1){
-        display: none;
-    }
-    /* time beginn */
-    /* td:nth-child(2){ } */
-    /* time divider */
-    td:nth-child(3){
-        max-width: 0px; 
-        padding-left: 5px;
-    }
-    /* time end */
-    td:nth-child(4){
-        padding-right: 10px;
-    }
-
-    /* agenda */
-    td:nth-child(5)
-    {
-        /* text-align: center; */
-        font-size: x-large;
-    }
-    .eus-flex1{
-        padding: 5px 5px ;
-        line-height: 1.3;
-    }
-    .eus-flex1:nth-child(2){
-        border-left: 1px solid var(--color-main);
-    }
-    .eus-flex1:last-child{
-        border-left: 1px solid var(--color-main);
-    }
-
-    .eus-subevent{
-        background-color: var(--color-main-light);
-    }
-
-    .eus-subevent-title{
-        font-weight: bolder;
-        border-top: 4px solid var(--color-main);
-        padding-top: 4px;
-    }
 
 }
 
+.eus-table tr td {
+    padding: 2px 0px 3px 15px;
+    border-bottom: 1px solid var(--color-main);
+}
+
+.eus-table tr 
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4)
+{
+    color: var(--color-main);
+    font-size: small;
+    /* border: 1px solid red; */
+    width: 20px;
+}
+
+.eus-table tr td:nth-child(1){
+        display: none;
+}
+
+.eus-table tr td:nth-child(3){
+        max-width: 0px; 
+        padding-left: 5px;
+}
+
+.eus-table tr td:nth-child(3){
+        max-width: 0px; 
+        padding-left: 5px;
+}
+
+.eus-table tr td:nth-child(3){
+        max-width: 0px; 
+        padding-left: 5px;
+}
+/* 👾🎨🖌️ Alte Schule CSS */
+.eus-table tr td:nth-child(3){
+    max-width: 0px; 
+    padding-left: 5px;
+}
+
+.eus-table tr td:nth-child(4){
+    padding-right: 10px;
+}
+
+/* 🕒 Zeit Ende */
+.eus-table tr td:nth-child(5) {
+    /* text-align: center; */
+    font-size: x-large;
+}
+
+.eus-table tr .eus-flex1{
+    padding: 5px 5px ;
+    line-height: 1.3;
+}
+
+.eus-table tr .eus-flex1:nth-child(2){
+    border-left: 1px solid var(--color-main);
+}
+
+.eus-table tr .eus-flex1:last-child{
+    border-left: 1px solid var(--color-main);
+}
+
+.eus-table tr .eus-subevent{
+    background-color: var(--color-main-light);
+}
+
+/* 🎨 Titelstyling für Subevent */
+.eus-table tr .eus-subevent-title{
+    font-weight: bolder;
+    border-top: 4px solid var(--color-main);
+    padding-top: 4px;
+}
 
 .eus-triplet {
     display: flex;
@@ -193,6 +215,16 @@ h1 {
 
 .eus-flex1{
     flex: 1;
+}
+
+
+/* 👾🎨🖌️ Zeichen hinzufügen mit CSS */
+/* 🎨 Verwende die ::before oder ::after Pseudo-Elemente, um ein Zeichen hinzuzufügen */
+.eus-flex1::before {
+    content: "> "; /* 👾 Zeichen */
+    /* 🎨 Stil hinzufügen */
+    color: var(--color-main); 
+    font-weight: bold;
 }
 
 .eus-Programmebreak {
@@ -224,3 +256,22 @@ tr:nth-child(n).eus-subevent-row {
 .eus-topbutton {
     min-height: 190px;
 }
+
+.eus-no-transform {
+    text-transform: none;
+}
+
+@media screen and (max-width: 500px) {
+    .eus-triplet {
+        flex-direction: column;
+    }
+    .eus-table tr .eus-flex1:nth-child(2), .eus-table tr .eus-flex1:last-child{
+        border-left: none
+    }
+
+    .eus-table tr td {
+        border: none;
+    }
+
+}
+    
