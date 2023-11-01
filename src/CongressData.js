@@ -1,14 +1,11 @@
 import { writable } from 'svelte/store';
 
 export const congressdata = writable({
-    'Wissenschaftliche Leitung': {   
-        name: 'TBD',
-        organisation: 'TBD'
-    },
-    'Certification': {
-        // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
-        content:'The event’s accreditation will be recognized by a Medical Association'
-    },
+    // 'Wissenschaftliche Leitung': {   
+    //     name: 'TBD',
+    //     organisation: 'TBD'
+    // },
+    
     'Programme Committee': [
         {
             organisation: 'BVÖGD',
@@ -36,4 +33,8 @@ export const congressdata = writable({
         fax: '+49 30 887273710',
         email: 'info@congress-compact.de',
     },    
+    'Certification': {
+        // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
+        content:'The event’s accreditation will be recognized by a Medical Association'
+    },
 });

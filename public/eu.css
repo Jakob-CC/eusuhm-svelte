@@ -261,6 +261,7 @@ tr:nth-child(n).eus-subevent-row {
     text-transform: none;
 }
 
+
 @media screen and (max-width: 500px) {
     .eus-triplet {
         flex-direction: column;
@@ -276,7 +277,12 @@ tr:nth-child(n).eus-subevent-row {
     .eus-width-1-1-mobile {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 800px) {
+    .eus-width-1-1-mobile {
+        width: 100%;
+    }
 }
     
 ::selection {
