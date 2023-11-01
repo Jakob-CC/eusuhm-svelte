@@ -134,7 +134,7 @@ export const eventSchedule = writable({
       event: [
         'Data for Action Monitoring Health in Children, Adolescents, and Students',
         'Intersectoral Interventions: Public Health on Site',
-        'School Nurses and Networking (GE/EN)'
+        'School Nurses and Networking (GE)'
       ]
     },
     {
