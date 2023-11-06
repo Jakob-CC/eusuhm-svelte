@@ -199,8 +199,6 @@ td:nth-child(4)
 /* 🎨 Titelstyling für Subevent */
 .eus-subevent-title{
     font-weight: bolder;
-    border-top: 4px solid var(--color-main);
-    padding-top: 4px;
 }
 
 .eus-triplet {
@@ -230,11 +228,8 @@ td:nth-child(4)
     /* opacity: 50%; */
   }
 
-tr:nth-child(n).eus-subevent-row {
+.eus-subevent-row {
     background-color: var(--color-main-light);
-    td {
-        border-bottom: none;
-    }
 }
 
 /* separating two parallel Programme blocks */

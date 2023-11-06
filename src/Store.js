@@ -145,7 +145,7 @@ export const eventSchedule = writable({
     {
       startTime: '11:30',
       endTime: '1:00',
-      subevent: '10 Interactive Rooms (Rotation after 40 min) Topics',
+      subevent: '10 Interactive Rooms (Rotation after 40 min)',
       event: 'Bridging Health and Education Gaps: Lessons Learnt!',
     },
     {
@@ -176,8 +176,8 @@ export const eventSchedule = writable({
     {
       startTime: '4:30',
       endTime: '6:00',
-      subevent: '10 Interactive Rooms (Rotation after 40 min) Topics',
-      event: 'Sharing Experience -Take Away Messages'
+      subevent: '10 Interactive Rooms (Rotation after 40 min)',
+      event: 'Sharing Experience - Take Away Messages'
     },
     {
       startTime: '6:00',
