@@ -91,7 +91,7 @@
     <h1 class="uk-text-center uk-heading-large">Interactive Rooms</h1>
     <h3>Bridging Health and Education Gaps: Lessons Learnt
     </h3>
-      <p>Friday: 11:30&hairsp;&ndash;&hairsp;1:00 and 4:30&hairsp;&ndash;&hairsp;6:00
+      <p>Friday: 11:30&hairsp;&hairsp;&ndash;&hairsp;1:00 and 4:30&hairsp;&hairsp;&ndash;&hairsp;6:00
        <br> Rotation after 40 Minutes</p>
     <!-- Card Grid -->
     <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top" uk-grid>
