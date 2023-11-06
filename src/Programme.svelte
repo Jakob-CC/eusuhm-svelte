@@ -24,14 +24,14 @@
                           {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
               ">
               <td class="no-border eus-subevent-title"></td>
-              <td class="no-border eus-subevent-title"></td>
-              <td class="no-border eus-subevent-title"></td>
-              <td class="no-border eus-subevent-title"></td>
+              <td class="no-border eus-subevent-title">{event.startTime}</td>
+              <td class="no-border eus-subevent-title">&HorizontalLine;</td>
+              <td class="no-border eus-subevent-title">{event.endTime}</td>
   
               <td class="eus-subevent eus-subevent-title no-border">
                 <!-- Extra Regel für Interactive Rooms -->
                 {#if typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('interactive rooms')}
-                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> &emsp;More&nbsp;Information</a> 
+                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> Rotation&nbsp;after&nbsp;40&nbsp;min &ndash; More&nbsp;Information</a> 
                 {:else}
                   {event.subevent}
                 {/if}
@@ -49,16 +49,25 @@
           ">
 
           <!-- Datum -->
-            <td>{day}</td>
-            <td>{event.startTime}</td>
-            <!-- Den Bindestrich bei den Zeiten wegnehmen bei dem ersten Eintrag -->
-              {#if event.event.includes('Welcome')}
-                <td></td>
-              {:else}
-                <td>—</td>
-              {/if}
+            <!-- Wenn Unterkategorie, dann Zeit ausblenden -->
+            {#if event.subevent}
+              <!-- Tabellenzellen für Zeiten leer lassen -->
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            {:else}
+              <td>{day}</td>
+              <td>{event.startTime}</td>
+                <!-- Den Bindestrich bei den Zeiten wegnehmen bei dem ersten Eintrag -->
+                {#if event.event.includes('Welcome')}
+                    <td></td>
+                {:else}
+                    <td>&HorizontalLine;</td>
+                {/if}
+              <td>{event.endTime}</td>
+            {/if}
           
-            <td>{event.endTime}</td>
           <!-- Titel -->
             <td class="
               <!-- Subevent formatting -->
