@@ -8,13 +8,13 @@
 </script>
 
 <!-- MAIN CONTENT -->
-<main class="uk-container">
-<article id="" class="uk-padding">
+<main class="uk-container uk-padding-remove-top">
+<article id="" class="uk-padding uk-padding-remove-top">
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
         {#each Object.entries(data) as [section, details], index}
             {#if index % 2 === 0}  <!-- 👾 Linke Spalte: Nur Indexe 0, 2, 4, ... -->
-              <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding">
+              <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
                       <h1>{section}</h1>
                       {#each Object.entries(details) as [key, value]}
@@ -52,7 +52,7 @@
     <div class="uk-width-1-2">
         {#each Object.entries(data) as [section, details], index}
             {#if index % 2 === 1}  <!-- 👾 Rechte Spalte: Nur Indexe 1, 3, 5, ... -->
-              <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding">
+              <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
                       <h1>{section}</h1>
                       {#each Object.entries(details) as [key, value]}
