@@ -13,7 +13,7 @@
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
         {#each Object.entries(data) as [section, details], index}
-            {#if index % 2 === 0}  <!-- 👾 Linke Spalte: Nur Indexe 0, 2, 4, ... -->
+            {#if index === 0}  <!-- 👾 Linke Spalte: Nur Indexe 0, 2, 4, ... -->
               <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
                       <h1>{section}</h1>
@@ -51,7 +51,7 @@
     </div>
     <div class="uk-width-1-2">
         {#each Object.entries(data) as [section, details], index}
-            {#if index % 2 === 1}  <!-- 👾 Rechte Spalte: Nur Indexe 1, 3, 5, ... -->
+            {#if index !== 0}  <!-- 👾 Rechte Spalte: Nur Indexe 1, 3, 5, ... -->
               <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
                       <h1>{section}</h1>
