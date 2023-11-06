@@ -18,7 +18,7 @@ export const congressdata = writable({
         {
             organisation: 'EUSUHM\'s Executive Committee',
             members: ['Noora Seilo', 'Marija Posavec', 'Bernarda Vogrin', 'Zophia Nagy', 'Lineke Dogger']
-        }
+        },
     ],
     'Location': {
         name: 'Oberlinschule',

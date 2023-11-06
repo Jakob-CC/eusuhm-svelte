@@ -244,7 +244,11 @@ table tr .eus-subevent-title {
 }
 
 .eus-topbutton {
-    min-height: 190px;
+    min-height: 150px;
+}
+
+.eus-topbutton h3{
+    line-height: 1.1;
 }
 
 .eus-no-transform {
@@ -267,7 +271,7 @@ table tr .eus-subevent-title {
 }
 
 @media screen and (max-width: 800px) {
-    .eus-width-1-1-mobile {
+    .eus-width-1-1-mobile { 
         width: 90%;
         padding:  0 0 30px 30px;
         margin: 0;
