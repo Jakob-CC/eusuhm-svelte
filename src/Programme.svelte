@@ -42,32 +42,38 @@
           {/if}
           <!-- Mit extra Regel für Plenary Session (Dopplung) -->
           <tr class="
+                <!-- Klasse für Titel von parallelen Veranstaltungen -->
                 {event.subevent ? 'eus-subevent-row' : ''}
+                <!-- Sonderregel für Plenary Session (Anderer Hintergrund) -->
                 {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
           ">
+          
           <!-- Datum -->
             <td>{day}</td>
             <td>{event.startTime}</td>
             <!-- Den Bindestrich bei den Zeiten wegnehmen bei dem ersten Eintrag -->
-            {#if event.event.includes('Welcome')}
-              <td></td>
-            {:else}
-              <td>—</td>
-            {/if}
-            
+              {#if event.event.includes('Welcome')}
+                <td></td>
+              {:else}
+                <td>—</td>
+              {/if}
+          
             <td>{event.endTime}</td>
+          <!-- Titel -->
             <td class="
               <!-- Subevent formatting -->
               {event.subevent ? 'eus-subevent' : ''}
               <!-- Break formatting -->
               {typeof event.event === 'string' && event.event.toLowerCase().includes('break') ? 'eus-Programmebreak' : ''}
             ">
+          <!-- Prüfen, ob mehrere Veranstaltungen parallel sind -->
               {#if Array.isArray(event.event)}
                 <div class="eus-triplet eus-subevent">
                   {#each event.event as e}
                     <div class="eus-flex1 eus-subevent">{e}</div>
                   {/each}
                 </div>
+          <!-- Wenn nicht parallel, dann einfach Titel schreiben -->
               {:else}
                 {event.event}
               {/if}
