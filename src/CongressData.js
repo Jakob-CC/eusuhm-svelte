@@ -35,6 +35,6 @@ export const congressdata = writable({
     },    
     'Certification': {
         // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
-        content:'The event’s accreditation will be recognized by a Medical Association'
+        content:'The event’s accreditation will be recognized by a medical association'
     },
 });
