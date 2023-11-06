@@ -9,7 +9,7 @@
 
 <!-- MAIN CONTENT -->
 <main class="uk-container uk-padding-remove-top">
-<article id="" class="uk-padding uk-padding-remove-top">
+<article id="" class="uk-padding-remove-top">
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
         {#each Object.entries(data) as [section, details], index}

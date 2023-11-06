@@ -268,7 +268,9 @@ table tr .eus-subevent-title {
 
 @media screen and (max-width: 800px) {
     .eus-width-1-1-mobile {
-        width: 100%;
+        width: 90%;
+        padding:  0 0 30px 30px;
+        margin: 0;
     }
 }
     
