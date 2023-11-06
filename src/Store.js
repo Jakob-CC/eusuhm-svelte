@@ -93,17 +93,20 @@ export const eventSchedule = writable({
     {
       startTime: '4:00',
       endTime: '6:00',
-      event: 'Plenary Session'
+      event: 'Plenary Session',
+      plenary: true,
     },
     {
       startTime: '4:00',
       endTime: '5:30',
-      event: 'Sustainable Health in Children and Students – Reduce the Gap!'
+      event: 'Sustainable Health in Children and Students – Reduce the Gap!',
+      plenary: true,
     },
     {
       startTime: '5:30',
       endTime: '6:00',
-      event: 'Panel Discussion: Lessons Learnt for Acting on the Ground'
+      event: 'Panel Discussion: Lessons Learnt for Acting on the Ground',
+      plenary: true,
     },
     {
       startTime: '6:00',
@@ -166,7 +169,8 @@ export const eventSchedule = writable({
       startTime: '2:00',
       endTime: '3:30',
       subevent: 'Plenary Session',
-      event: 'Digital World and Impact on Children’s and Adolescents’ Wellbeing'
+      event: 'Digital World and Impact on Children’s and Adolescents’ Wellbeing',
+      plenary: true,
     },
     {
       startTime: '3:30',

@@ -197,8 +197,10 @@ td:nth-child(4)
 }
 
 /* 🎨 Titelstyling für Subevent */
-.eus-subevent-title{
-    font-weight: bolder;
+table tr .eus-subevent-title {
+    font-weight: bolder ;
+    font-size: xx-large;
+    /* color: red !important; */
 }
 
 .eus-triplet {
@@ -238,8 +240,7 @@ td:nth-child(4)
 }
 
 .eus-table .plenary td{
-        background-color: white !important;
-        /* opacity: 80%; */
+        background-color: var(--color-yellow);
 }
 
 .eus-topbutton {

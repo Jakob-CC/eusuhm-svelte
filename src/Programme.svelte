@@ -1,4 +1,5 @@
 <script>
+  import { each } from 'svelte/internal';
     import { euscolors, eventSchedule, interactiveRooms } from './Store.js';
   </script>
 
@@ -23,10 +24,10 @@
                           eus-subevent-row
                           {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
               ">
-              <td class="no-border eus-subevent-title"></td>
-              <td class="no-border eus-subevent-title">{event.startTime}</td>
-              <td class="no-border eus-subevent-title">&HorizontalLine;</td>
-              <td class="no-border eus-subevent-title">{event.endTime}</td>
+              <td class="no-border "></td>
+              <td class="no-border ">{event.startTime}</td>
+              <td class="no-border ">&HorizontalLine;</td>
+              <td class="no-border ">{event.endTime}</td>
   
               <td class="eus-subevent eus-subevent-title no-border">
                 <!-- Extra Regel für Interactive Rooms -->
@@ -45,17 +46,22 @@
                 <!-- Klasse für Titel von parallelen Veranstaltungen -->
                 {event.subevent ? 'eus-subevent-row' : ''}
                 <!-- Sonderregel für Plenary Session (Anderer Hintergrund) -->
-                {typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('plenary') ? 'plenary' : ''}
+                {event.plenary ? 'plenary' : ''}
           ">
 
           <!-- Datum -->
             <!-- Wenn Unterkategorie, dann Zeit ausblenden -->
             {#if event.subevent}
               <!-- Tabellenzellen für Zeiten leer lassen -->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              {#each Array(4) as _}
+                 <!-- content here -->
+                 <td></td>
+              {/each}
+            {:else if event.plenary}
+              <td class="no-border">{day}</td>
+              <td class="no-border">{event.startTime}</td>
+              <td class="no-border">&HorizontalLine;</td>
+              <td class="no-border">{event.endTime}</td>
             {:else}
               <td>{day}</td>
               <td>{event.startTime}</td>
@@ -72,6 +78,8 @@
             <td class="
               <!-- Subevent formatting -->
               {event.subevent ? 'eus-subevent' : ''}
+              <!-- Plenary Session Titling -->
+              {event.event.includes('Plenary') ? 'eus-subevent-title' : ''}
               <!-- Break formatting -->
               {typeof event.event === 'string' && event.event.toLowerCase().includes('break') ? 'eus-Programmebreak' : ''}
             ">
