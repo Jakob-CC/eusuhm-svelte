@@ -133,9 +133,6 @@ h1 {
 
 
 /* Agenda */
-.eus-table tr {
-
-}
 
 .eus-table tr td {
     padding: 2px 0px 3px 15px;
@@ -144,6 +141,10 @@ h1 {
 
 .no-border{
     border-bottom: none !important;
+}
+
+.eus-margin-0 {
+    margin: 0 !important;
 }
 
 .eus-table tr 
@@ -176,7 +177,7 @@ td:nth-child(4)
     /* text-align: center; */
     font-size: x-large;
     line-height: 1;
-    padding: 10px 0px;
+    padding: 10px 30px 10px 0;
 }
 
 .eus-table tr .eus-flex1{
@@ -243,6 +244,17 @@ table tr .eus-subevent-title {
         background-color: var(--color-yellow);
 }
 
+.eus-entry {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    
+    font-size: larger;
+    line-height: 1;
+
+}
+
 .eus-topbutton {
     min-height: 150px;
 }
@@ -277,7 +289,7 @@ table tr .eus-subevent-title {
 
 @media screen and (max-width: 800px) {
     .eus-width-1-1-mobile { 
-        width: 90%;
+        width: 300px;
         padding:  0 0 30px 30px;
         margin: 0;
     }

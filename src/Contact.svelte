@@ -3,7 +3,7 @@
     <article class="uk-container uk-container-expand">
         <div class="uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-2@m uk-margin-large-top" uk-grid>
             <!-- Contact Details -->
-            <div class="uk-padding-large">
+            <div class="">
                 <h1 class="uk-heading-small">Contact Us</h1>
                 <h2 class="uk-text-bold uk-margin-small-bottom">Get in Touch</h2>
                 <p class="uk-text-lead uk-margin-small-bottom">

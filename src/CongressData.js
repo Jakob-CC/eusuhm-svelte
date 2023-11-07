@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-export const congressdata = writable({
+export const congressData = writable({
     // 'Wissenschaftliche Leitung': {   
     //     name: 'TBD',
     //     organisation: 'TBD'
@@ -16,7 +16,7 @@ export const congressdata = writable({
             members: ['Tina Huber-Gieseke', 'Susanne Stronski']
         },
         {
-            organisation: 'EUSUHM\'s Executive Committee',
+            organisation: 'EUSUHM\'s Executive\u00A0Committee',
             members: ['Noora Seilo', 'Marija Posavec', 'Bernarda Vogrin', 'Zophia Nagy', 'Lineke Dogger']
         },
     ],
@@ -27,14 +27,15 @@ export const congressdata = writable({
     },
     'Organiser': {
         company: 'Congress Compact 2C GmbH',
-        contact: 'Gina Braun',
-        address: 'Joachimsthaler Straße 31-32, 10719 Berlin',
+        contact: 'Gina Braun, Anne Klein',
+        address: 'Joachimsthaler Straße 31-32, 10719\u00A0Berlin',
         phone: '+49 30 88727370',
-        fax: '+49 30 887273710',
+        // fax: '+49 30 887273710',
         email: 'info@congress-compact.de',
     },    
     'Certification': {
         // content:'Certification of the event will be applied for at the Hamburg Medical Association, Ärztekammer Hamburg.'
-        content:'The event’s accreditation will be recognized by a medical association'
+        line1:'The event’s accreditation will be ',
+        line2:'recognized by a medical association.'
     },
 });

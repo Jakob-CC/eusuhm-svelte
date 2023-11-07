@@ -116,7 +116,7 @@ export const eventSchedule = writable({
     {
       startTime: '7:00',
       endTime: '9:00',
-      event: 'Get Together: Reithalle Schiffsbauergasse'
+      event: 'Get Together' // Reithalle Schiffsbauergasse'
     }
   ],
   'Friday': [
@@ -230,7 +230,7 @@ export const eventSchedule = writable({
     {
       startTime: '1:30',
       endTime: '2:30',
-      event: 'Closing Session: Think Globally, Act Locally'
+      event: 'Closing Session - Think Globally, Act Locally'
     },
     {
       startTime: '2:30',
