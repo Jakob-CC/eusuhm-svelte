@@ -125,12 +125,14 @@ h1 {
 
 .eus-table {
     border-collapse: collapse;
-    tr:nth-child(odd) {
-        background-color: rgba(0,0,0,0.03);
-    }
+
     min-width: 100%;
+    width: 100%;
 }
 
+.eus-table tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.03);
+}
 
 /* Agenda */
 
