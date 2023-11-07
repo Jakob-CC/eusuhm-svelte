@@ -5,10 +5,12 @@
 
 :root {
     --color-main:       rgb(23, 207, 100);
-    --color-main-light: rgb(233, 242, 231);
+    --color-main-light: #e6ffe1;
     --color-main-dark:  rgb(0, 129, 54);
     --color-orange:     #F29B74;
     --color-yellow:     #F3FB34;
+    --color-yellow-light:     #fcffb2;
+
     --font-serif: SabonLTPro-Roman, Helvetica, Arial;
     --font-sans: NoahGrotesque-Medium, Georgia;
     /* position of main logo */
@@ -232,7 +234,7 @@ table tr .eus-subevent-title {
 }
 
 .eus-table .plenary td{
-        background-color: var(--color-yellow);
+        background-color: var(--color-yellow-light);
 }
 
 .eus-entry {
@@ -248,11 +250,6 @@ table tr .eus-subevent-title {
 
 .eus-topbutton {
     min-height: 150px;
-}
-
-.eus-topbutton h3, .eus-topbutton h2, .eus-topbutton h1{
-    line-height: 1.1;
-    color: #F29B74;
 }
 
 .eus-line-height-1 {
@@ -283,7 +280,6 @@ table tr .eus-subevent-title {
         /* 🎨 Stil hinzufügen */
         color: var(--color-main); 
         font-weight: bold;
-    }
 
 }
 
