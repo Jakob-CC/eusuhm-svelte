@@ -16,7 +16,7 @@
 
 
     <article class="uk-margin-large">
-        <h1 class="uk-text-center uk-heading-large">Our main topics in 2024</h1>
+        <h1 class="uk-text-center uk-heading-large eus-transform-none">Our Main Topics in 2024</h1>
   
         <!-- Card Grid -->
         <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top" uk-grid>

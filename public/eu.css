@@ -268,7 +268,7 @@ table tr .eus-subevent-title {
     line-height: 1.1;
 }
 
-.eus-no-transform {
+.eus-transform-none {
     text-transform: none;
 }
 
