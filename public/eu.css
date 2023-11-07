@@ -247,7 +247,12 @@ table tr .eus-subevent-title {
     min-height: 150px;
 }
 
-.eus-topbutton h3{
+.eus-topbutton h3, .eus-topbutton h2, .eus-topbutton h1{
+    line-height: 1.1;
+    color: #F29B74;
+}
+
+.eus-line-height-1 {
     line-height: 1.1;
 }
 

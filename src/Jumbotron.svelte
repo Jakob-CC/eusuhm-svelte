@@ -26,7 +26,7 @@
           <!-- the first color should not be green, so i+n -->
           <a href="{button.url}" rel="noopener" target="_blank">
             <div style="background-color:{euscolors[ (2+i) % (euscolors.length-1) ]}" class="uk-height-small uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center">
-              <h3 class="uk-text-bold">{button.label}</h3>
+              <h3 class="uk-text-bold eus-line-height-1">{button.label}</h3>
             </div>
           </a>
         </div>
