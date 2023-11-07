@@ -9,13 +9,13 @@ export const congressData = writable({
     'Programme Committee': [
         {
             organisation: 'BVÖGD',
-            fullname: 'Federal Association of Doctors in the Public Health Service',
+            fullname: 'Federal Association of Doctors in\u00A0the\u00A0Public Health Service',
             link: 'https://www.bvoegd.de/',
             members: ['Gabriele Ellsäßer', 'Bettina Langenbruch', 'Karlin Stark', 'Gabriele Trost-Brinkhues', 'Andrea Wünsch', 'Claudia Korebrits']
         },
         {
             organisation: 'ScolarMed',
-            fullname: 'Swiss Association of Specialists in the School Health Service',
+            fullname: 'Swiss Association of Specialists in\u00A0the\u00A0School Health Service',
             link: 'https://www.scolarmed.ch/index.php/de/',
             members: ['Tina Huber-Gieseke', 'Susanne Stronski']
         },
@@ -46,7 +46,8 @@ export const congressData = writable({
     'Organiser': {
         company: 'Congress Compact 2C GmbH',
         contact: 'Gina Braun, Anne Klein',
-        address: 'Joachimsthaler Straße 31-32, 10719\u00A0Berlin',
+        address: 'Joachimsthaler Straße 31-32', 
+        address2: '10719\u00A0Berlin',
         phone: '+49 30 88727370',
         // fax: '+49 30 887273710',
         email: 'info@congress-compact.de',

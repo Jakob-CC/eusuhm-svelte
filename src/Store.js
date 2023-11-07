@@ -50,7 +50,7 @@ export const interactiveRooms = writable([
   "Early Childhood and Early Support",
   "Inclusion of Children with Chronic Health Conditions in Schools: Collaboration Between the Education and Health Sector",
   "Special Education and Health Care for Children with Chronic conditions",
-  "Mental Health and Wellbeing in Adolescents and Students",
+  "Mental Health and Wellbeing in Adolescents and\u00A0Students",
   "School Absenteeism – Cooperation Needs between the Educational and Health Sector",
   "Health Promotion Projects in Schools – Sharing Experience on the Ground",
   "School Health Services in Europe: Guidelines, Researches, Challenges",
@@ -62,7 +62,7 @@ export const hottopics = writable ([
   "Sustainable Health in Children and Students – Reduce the Gap!",
   "Bridging Health and Education Gaps: Lessons Learnt!",
   "Digital World and Impact on Children’s and Adolescents’ Wellbeing",
-  "Data for Action: Monitoring Health in Children, Adolescents and Students",
+  "Data for Action: Monitoring Health in Children, Adolescents and\u00A0Students",
   "Intersectoral Interventions: Public Health on Site",
   "School Nurses and Networking",
   "Improving HPV Vaccination in Europe",
@@ -135,8 +135,8 @@ export const eventSchedule = writable({
       endTime: '11:00',
       subevent:'Parallel Sessions',
       event: [
-        'Data for Action Monitoring Health in Children, Adolescents, and Students',
-        'Intersectoral Interventions: Public Health on Site',
+        'Data for Action Monitoring Health in\u00A0Children, Adolescents and\u00A0Students',
+        'Intersectoral Interventions: Public\u00A0Health on Site',
         'School Nurses and Networking (GE)'
       ]
     },

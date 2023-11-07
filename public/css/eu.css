@@ -211,14 +211,7 @@ table tr .eus-subevent-title {
 }
 
 
-/* 👾🎨🖌️ Zeichen hinzufügen mit CSS */
-/* 🎨 Verwende die ::before oder ::after Pseudo-Elemente, um ein Zeichen hinzuzufügen */
-.eus-flex1::before {
-    content: "> "; /* 👾 Zeichen */
-    /* 🎨 Stil hinzufügen */
-    color: var(--color-main); 
-    font-weight: bold;
-}
+
 
 .eus-Programmebreak {
     font-family: var(--font-serif);
@@ -271,7 +264,7 @@ table tr .eus-subevent-title {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .eus-triplet {
         flex-direction: column;
     }
@@ -283,13 +276,28 @@ table tr .eus-subevent-title {
         border: none;
     }
 
+    /* 👾🎨🖌️ Zeichen hinzufügen mit CSS */
+/* 🎨 Verwende die ::before oder ::after Pseudo-Elemente, um ein Zeichen hinzuzufügen */
+.eus-flex1::before {
+    content: "--"; /* 👾 Zeichen */
+    /* 🎨 Stil hinzufügen */
+    color: var(--color-main); 
+    font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 900px) {
     .eus-width-1-1-mobile { 
         width: 300px;
-        padding:  0 0 0px 30px;
+        padding:  0px 0 0px 30px;
         margin: 0;
+    }
+    .eus-width-1-1-mobile h1{ 
+        padding-top: 60px;
+    }
+    .eus-width-1-1-mobile:last-child { 
+        padding-bottom: 30px;
     }
 }
     
