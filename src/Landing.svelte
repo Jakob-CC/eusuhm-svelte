@@ -28,18 +28,23 @@ $: data = $congressData;
                           {:else if typeof value === 'object'}
                               <div class="uk-grid">
                                   {#each Object.entries(value) as [innerKey, innerValue],index}
-                                      <div class="uk-width-1-2 eus-width-1-1-mobile">
+                                    {#if innerKey==='organisation'}
+                                        <div class="uk-width-1-2 eus-width-1-1-mobile">
                                             <!-- Regel für "BVÖGD" und solche Titel -->
-                                          {#if index===0}
-                                              <h3 class="eus-topborder">{innerValue}</h3>
-                                          {:else}
+                                            <h3 class="eus-topborder">{innerValue}</h3>
+                                            <a href="{value.link}" target="_blank" rel="noopener">
+                                                <p>{value.fullname}</p>
+                                            </a>
+                                        </div>
+                                    {:else if innerKey==='members'}<!-- Keine Aktion für index 1 und 2 -->
+                                        <div class="uk-width-1-2 eus-width-1-1-mobile">
                                               <ul class="uk-list">
                                                   {#each innerValue as person}
                                                       <li class="eus-margin-0">{person}</li>
                                                   {/each}
                                               </ul>
-                                          {/if}
-                                      </div>
+                                        </div>
+                                    {/if}
                                   {/each}
                               </div>
                           {:else}
