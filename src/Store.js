@@ -65,7 +65,7 @@ export const hottopics = writable ([
   "Data for Action: Monitoring Health in Children, Adolescents and Students",
   "Intersectoral Interventions: Public Health on Site",
   "School Nurses and Networking",
-  "Improving HPV Vaccination in Europe - Lessons Learnt",
+  "Improving HPV Vaccination in Europe",
   "Vision and Hearing Screening",
   "Gender Dysphoria",
   "Inclusion of Children with Chronic Health Conditions: Models of Good Practice",
@@ -161,7 +161,7 @@ export const eventSchedule = writable({
       endTime: '1:45',
       subevent: "Pharma Symposium",
       event: [
-        'Improving HPV Vaccination in Europe - Lessons Learnt',
+        'Improving HPV Vaccination in Europe',
         'Vision and Hearing Screening'
       ]
     },
@@ -178,13 +178,13 @@ export const eventSchedule = writable({
       event: 'Coffee Break'
     },
     {
-      startTime: '4:30',
-      endTime: '6:00',
+      startTime: '4:00',
+      endTime: '5:30',
       subevent: '10 Interactive Rooms  ',
       event: 'Sharing Experience - Take Away Messages'
     },
     {
-      startTime: '6:00',
+      startTime: '5:45',
       endTime: '7:00',
       event: 'General Assembly'
     },
@@ -196,7 +196,7 @@ export const eventSchedule = writable({
   ],
   'Saturday': [
     {
-      startTime: '9:00',
+      startTime: '8:00',
       endTime: '9:30',
       subevent: 'Early Bird Pharma Symposium',
       event: ['ADHD', 'New Vaccines']
@@ -207,10 +207,10 @@ export const eventSchedule = writable({
       event: 'Coffee Break'
     },
     {
-      startTime: '9:00',
+      startTime: '10:00',
       endTime: '11:30',
       subevent: 'Parallel Sessions',
-      event: ['Inclusion of Children with Chronic Health Conditions: Models of Good Practice', 'Gender Dysphoria']
+      event: ['Inclusion of Children with Chronic Health Conditions: Models of Good Practice', 'Sexuality, Diversity, Puberty']
     },
     {
       startTime: '11:30',
