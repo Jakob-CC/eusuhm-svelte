@@ -581,7 +581,7 @@ var app = (function () {
       "Early Childhood and Early Support",
       "Inclusion of Children with Chronic Health Conditions in Schools: Collaboration Between the Education and Health Sector",
       "Special Education and Health Care for Children with Chronic conditions",
-      "Mental Health and Wellbeing in Adolescents and Students",
+      "Mental Health and Wellbeing in Adolescents and\u00A0Students",
       "School Absenteeism – Cooperation Needs between the Educational and Health Sector",
       "Health Promotion Projects in Schools – Sharing Experience on the Ground",
       "School Health Services in Europe: Guidelines, Researches, Challenges",
@@ -593,7 +593,7 @@ var app = (function () {
       "Sustainable Health in Children and Students – Reduce the Gap!",
       "Bridging Health and Education Gaps: Lessons Learnt!",
       "Digital World and Impact on Children’s and Adolescents’ Wellbeing",
-      "Data for Action: Monitoring Health in Children, Adolescents and Students",
+      "Data for Action: Monitoring Health in Children, Adolescents and\u00A0Students",
       "Intersectoral Interventions: Public Health on Site",
       "School Nurses and Networking",
       "Improving HPV Vaccination in Europe",
@@ -666,8 +666,8 @@ var app = (function () {
           endTime: '11:00',
           subevent:'Parallel Sessions',
           event: [
-            'Data for Action Monitoring Health in Children, Adolescents, and Students',
-            'Intersectoral Interventions: Public Health on Site',
+            'Data for Action Monitoring Health in\u00A0Children, Adolescents and\u00A0Students',
+            'Intersectoral Interventions: Public\u00A0Health on Site',
             'School Nurses and Networking (GE)'
           ]
         },
@@ -1367,13 +1367,13 @@ var app = (function () {
         'Programme Committee': [
             {
                 organisation: 'BVÖGD',
-                fullname: 'Federal Association of Doctors in the Public Health Service',
+                fullname: 'Federal Association of Doctors in\u00A0the\u00A0Public Health Service',
                 link: 'https://www.bvoegd.de/',
                 members: ['Gabriele Ellsäßer', 'Bettina Langenbruch', 'Karlin Stark', 'Gabriele Trost-Brinkhues', 'Andrea Wünsch', 'Claudia Korebrits']
             },
             {
                 organisation: 'ScolarMed',
-                fullname: 'Swiss Association of Specialists in the School Health Service',
+                fullname: 'Swiss Association of Specialists in\u00A0the\u00A0School Health Service',
                 link: 'https://www.scolarmed.ch/index.php/de/',
                 members: ['Tina Huber-Gieseke', 'Susanne Stronski']
             },
@@ -1404,7 +1404,8 @@ var app = (function () {
         'Organiser': {
             company: 'Congress Compact 2C GmbH',
             contact: 'Gina Braun, Anne Klein',
-            address: 'Joachimsthaler Straße 31-32, 10719\u00A0Berlin',
+            address: 'Joachimsthaler Straße 31-32', 
+            address2: '10719\u00A0Berlin',
             phone: '+49 30 88727370',
             // fax: '+49 30 887273710',
             email: 'info@congress-compact.de',
