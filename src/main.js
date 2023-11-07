@@ -1,5 +1,5 @@
 import App from './App.svelte';
-import eusuhmLogo from './assets/img/logo-separat/eusuhm_logo.svg';
+// import eusuhmLogo from './assets/img/logo-separat/eusuhm_logo.svg';
 
 // uikit
 import './assets/uikit.min.js';
