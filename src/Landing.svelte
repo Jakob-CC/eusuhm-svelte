@@ -10,7 +10,7 @@ $: data = $congressData;
 
 <!-- MAIN CONTENT -->
 <main class="uk-container uk-padding-remove-top">
-<article id="" class="uk-padding-remove-top">
+<article id="landing-data" class="uk-padding-remove-top">
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
         {#each Object.entries(data) as [section, details], index}
@@ -31,14 +31,14 @@ $: data = $congressData;
                                     {#if innerKey==='organisation'}
                                         <div class="uk-width-1-2 eus-width-1-1-mobile">
                                             <!-- Regel für "BVÖGD" und solche Titel -->
-                                            <h3 class="eus-topborder">{innerValue}</h3>
+                                            <h3 class="eus-topborder eus-margin-0">{innerValue}</h3>
                                             <a href="{value.link}" target="_blank" rel="noopener">
-                                                <p>{value.fullname}</p>
+                                                <p class="">{value.fullname}</p>
                                             </a>
                                         </div>
                                     {:else if innerKey==='members'}<!-- Keine Aktion für index 1 und 2 -->
                                         <div class="uk-width-1-2 eus-width-1-1-mobile">
-                                              <ul class="uk-list">
+                                              <ul class="uk-list eus-margin-0">
                                                   {#each innerValue as person}
                                                       <li class="eus-margin-0">{person}</li>
                                                   {/each}

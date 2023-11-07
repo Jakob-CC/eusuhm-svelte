@@ -20,7 +20,7 @@ export const congressData = writable({
             members: ['Tina Huber-Gieseke', 'Susanne Stronski']
         },
         {
-            organisation: 'EUSUHM\'s Executive\u00A0Committee',
+            organisation: 'EUSUHM\'s Executive Committee',
             fullname: 'European Union for School and University Health and Medicine',
             link: 'https://eusuhm.org/',
             members: ['Noora Seilo', 'Marija Posavec', 'Bernarda Vogrin', 'Zophia Nagy', 'Lineke Dogger']

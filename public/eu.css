@@ -290,7 +290,7 @@ table tr .eus-subevent-title {
 @media screen and (max-width: 800px) {
     .eus-width-1-1-mobile { 
         width: 300px;
-        padding:  0 0 30px 30px;
+        padding:  0 0 0px 30px;
         margin: 0;
     }
 }
@@ -315,5 +315,5 @@ table tr .eus-subevent-title {
 .eus-grid-column {
     display: flex;
     flex-wrap: wrap;
-  }
-  
+}
+
