@@ -31,8 +31,8 @@ $: data = $congressData;
                                     {#if innerKey==='organisation'}
                                         <div class="uk-width-1-2 eus-width-1-1-mobile">
                                             <!-- Regel für "BVÖGD" und solche Titel -->
-                                            <h3 class="eus-topborder eus-margin-0">{innerValue}</h3>
                                             <a href="{value.link}" target="_blank" rel="noopener">
+                                            <h3 class="eus-topborder eus-margin-0">{innerValue}</h3>
                                                 <p class="">{value.fullname}</p>
                                             </a>
                                         </div>

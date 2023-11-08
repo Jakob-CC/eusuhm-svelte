@@ -25,30 +25,30 @@
 		});
 	});
 
-</script>
+</script>	
 
 <Navbar/>
-
 {#if currentRoute === '/submit'}
-  	<Submit />
+	<Submit />
+	<Contact />
+	<Footer />
+{:else if currentRoute === '/programme'}	
 	<Programme />
 	<Footer />
 
-	{:else if currentRoute === '/accomodation'}
+{:else if currentRoute === '/accomodation'}
 	<Accomodation />
 	<Contact />
 	<Footer />
-	{:else if currentRoute === '/about'}
+{:else if currentRoute === '/about'}
 	<About />
 	<Jumbotron />
-
-
+	<Footer />
 {:else}
-  <Jumbotron />
-  <Landing />
-
-  <Footer />
-  {/if}
+	<Jumbotron />
+	<Landing />
+	<Footer />
+{/if}
 
 <!-- Here, <Navbar /> is outside the conditional block, so it's common to all routes. The content (either <Landing />, <Contact />, etc. or <Submit />) changes based on the value of currentRoute.
 Also, I added an {:else} block to show the main page components only if the route is not /submit. This prevents the main page and submit page components from showing up simultaneously. -->

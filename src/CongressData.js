@@ -27,7 +27,7 @@ export const congressData = writable({
         },
         {
             organisation: 'DGÖG',
-            fullname: 'German Association for\u00A0Public\u00A0Health',
+            fullname: 'German Association for\u00A0Public Health Service',
             link: 'https://www.dgoeg.de/',
             members: ['Claudia Korebrits']
         },
