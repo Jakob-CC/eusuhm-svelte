@@ -199,9 +199,14 @@ td:nth-child(4)
 
 /* 🎨 Titelstyling für Subevent */
 table tr .eus-subevent-title {
-    font-weight: bolder ;
+    color: var(--color-main);
     font-size: xx-large;
-    /* color: red !important; */
+}
+
+table tr .eus-subevent-title a {
+    font-size: small;
+    color: var(--color-main);
+    border-bottom: 1px solid var(--color-main);
 }
 
 .eus-triplet {

@@ -32,7 +32,7 @@
               <td class="eus-subevent eus-subevent-title no-border">
                 <!-- Extra Regel für Interactive Rooms -->
                 {#if typeof event.subevent === 'string' && event.subevent.toLowerCase().includes('interactive rooms')}
-                  {event.subevent} <a href="#interactiverooms" class="uk-text-small"> Rotation&nbsp;after&nbsp;40&nbsp;min &ndash; More&nbsp;Information</a> 
+                  {event.subevent} <a href="#interactiverooms"> Rotation&nbsp;after&nbsp;40&nbsp;min &ndash; More&nbsp;Information</a> 
                 {:else}
                   {event.subevent}
                 {/if}
