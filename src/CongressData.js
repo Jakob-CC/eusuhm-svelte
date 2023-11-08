@@ -57,4 +57,20 @@ export const congressData = writable({
         line1:'The event’s accreditation will be ',
         line2:'recognized by a medical association.'
     },
+    // 'Pricing': {
+    //     cat1: 'members:early bird: 280€, then 300€',
+    //     cat2: 'non-members:early bird: 380€, then 400€',
+    //     cat3: 'students: early bird: 150€, then 170€',
+    //     cat4: 'day_ticket: early bird: 120€, then 140€',
+    //     cat5: 'nurses: early bird: 120€, then 140€',
+    //     evening: 'evening event: 70€'
+    //   },
+    'Pricing': {
+        members: { early_bird: 280, regular: 300 },
+        'non members': { early_bird: 380, regular: 400 },
+        students: { early_bird: 150, regular: 170 },
+        'day ticket': { early_bird: 120, regular: 140 },
+        nurses: { early_bird: 120, regular: 140 },
+        evening: { 0:'70', 1:'70'}
+    }
 });

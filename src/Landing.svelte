@@ -61,29 +61,28 @@ $: data = $congressData;
             {#if index !== 0}  
               <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
-                      <h1>{section}</h1>
+                    {#if section==='Pricing'}
+                        <h1   style="line-height:0; padding-bottom:0;">{section}</h1>
+                        <span style="display: inline-block; width:110px"></span>
+                        <span style="display: inline-block; width:80px; text-align:right;">early bird</span>
+                        <span style="display: inline-block; width:80px; text-align:right;">regular</span>
+                      {:else}     
+                        <h1>{section}</h1>
+                      {/if}
                       <p>
                       {#each Object.entries(details) as [key, value]}
-                      <!-- {key} -->
-                          {#if Array.isArray(value)}
-                              <!-- Inhalt wie "Congress Compact" -->
-                              {#each value as item}
-                                  {item}
-                              {/each}
-                          {:else if typeof value === 'object'}
-                              <div class="uk-grid">
-                                  {#each Object.entries(value) as [innerKey, innerValue],index}
-                                      <div class="uk-width-1-3 eus-width-1-1-mobile">
-                                                  {#each innerValue as person}
-                                                      <li>{person}</li>
-                                                  {/each}
-                                      </div>
-                                  {/each}
-                              </div>
-                          {:else}
-                              {value} &nbsp;
-                              <br>
-                          {/if}
+                                {#if section==='Pricing'}
+                                    <span style="display: inline-block; width:110px">{key}</span>
+                                    {#each Object.entries(value) as [cat, prices]}
+                                        <span style="display: inline-block; width:80px; text-align:right;">{prices}&hairsp;&hairsp;€</span>
+                                        <!-- 11 -->
+                                         <!-- content here -->
+                                    {/each}
+                                    <br>
+                                {:else}
+                                    {value} &nbsp;
+                                    <br>
+                                {/if}
                       {/each}
                     </p>
                   {/if}

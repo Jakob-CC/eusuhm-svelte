@@ -3,8 +3,8 @@
 	
 	// main sections
 	import Navbar from './Navbar.svelte';
-	import Footer from './Footer.svelte';
 	import Contact from './Contact.svelte';
+	import Footer from './Footer.svelte';
 	// sub sections
 	import Landing from './Landing.svelte';
 	import Submit from './Submit.svelte';
@@ -12,6 +12,7 @@
 	import Accomodation from './Accomodation.svelte';
 	import About from './About.svelte';
 	import Jumbotron from './Jumbotron.svelte';
+	import Maintopics from './maintopics.svelte';
 
 	// subpages setup
 	let currentRoute = window.location.pathname;
@@ -32,7 +33,9 @@
 	<Submit />
 	<Contact />
 	<Footer />
+
 {:else if currentRoute === '/programme'}	
+	<Maintopics />
 	<Programme />
 	<Footer />
 
@@ -40,14 +43,17 @@
 	<Accomodation />
 	<Contact />
 	<Footer />
+
 {:else if currentRoute === '/about'}
 	<About />
 	<Jumbotron />
 	<Footer />
+
 {:else}
 	<Jumbotron />
 	<Landing />
 	<Footer />
+
 {/if}
 
 <!-- Here, <Navbar /> is outside the conditional block, so it's common to all routes. The content (either <Landing />, <Contact />, etc. or <Submit />) changes based on the value of currentRoute.
