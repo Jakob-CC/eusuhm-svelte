@@ -9,7 +9,7 @@
   <article id="" class="uk-article uk-padding-remove-bottom">
     <h2 id="eus-smallhead">Sustainable Health in&nbsp;Children and&nbsp;Students —&nbsp;Reduce&nbsp;the&nbsp;GAP!</h2>
 </article>
-<section id="top" class="eus-potsdam-bg  uk-section uk-section-primary uk-text-center uk-light eus-background-prime uk-padding-remove-top">
+<section id="jumbotron" class="eus-potsdam-bg  uk-section uk-section-primary uk-text-center uk-light eus-background-prime uk-padding-remove-top">
     <div style="max-width:100%; margin: 60px 30px" class="eus-clip uk-card uk-card-body uk-background-primary uk-padding-small">
       <p>Congress Announcement </p>
       <h1 class="uk-heading-large"> 22nd EUSUHM Congress </h1>

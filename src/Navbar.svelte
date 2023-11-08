@@ -7,7 +7,7 @@
 <!-- {test} -->
 <!-- Sticky Logo Green Snake -->
 
-<a href="#top" id="eus-sticky-logo">
+<a href="." id="eus-sticky-logo">
     <img src="./img/eusuhm_logo.svg" alt="Logo"/>
     <!-- <img src={logo} alt="Logo"/> -->
 </a>
