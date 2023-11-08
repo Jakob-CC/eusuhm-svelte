@@ -806,8 +806,8 @@ var app = (function () {
     			attr_dev(a, "href", /*url*/ ctx[1]);
     			attr_dev(a, "target", /*target*/ ctx[2]);
     			attr_dev(a, "rel", "noopener");
-    			add_location(a, file$9, 35, 16, 1265);
-    			add_location(li, file$9, 35, 12, 1261);
+    			add_location(a, file$9, 35, 16, 1262);
+    			add_location(li, file$9, 35, 12, 1258);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -846,8 +846,8 @@ var app = (function () {
     			attr_dev(a, "href", /*url*/ ctx[1]);
     			attr_dev(a, "target", /*target*/ ctx[2]);
     			attr_dev(a, "rel", "noopener");
-    			add_location(a, file$9, 55, 16, 2016);
-    			add_location(li, file$9, 55, 12, 2012);
+    			add_location(a, file$9, 55, 16, 2013);
+    			add_location(li, file$9, 55, 12, 2009);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -950,48 +950,48 @@ var app = (function () {
     			div7 = element("div");
     			if (!src_url_equal(img0.src, img0_src_value = "./img/eusuhm_logo.svg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Logo");
-    			add_location(img0, file$9, 10, 4, 315);
-    			attr_dev(a0, "href", "#top");
+    			add_location(img0, file$9, 10, 4, 312);
+    			attr_dev(a0, "href", ".");
     			attr_dev(a0, "id", "eus-sticky-logo");
     			add_location(a0, file$9, 9, 0, 273);
     			attr_dev(span, "uk-icon", "icon: navbar-toggle-icon; ratio: 1.5");
-    			add_location(span, file$9, 23, 16, 891);
+    			add_location(span, file$9, 23, 16, 888);
     			attr_dev(a1, "class", "uk-text-success uk-navbar-toggle uk-hidden@m");
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "uk-toggle", "target: #offcanvas-nav");
-    			add_location(a1, file$9, 22, 12, 773);
+    			add_location(a1, file$9, 22, 12, 770);
     			attr_dev(div0, "class", "uk-navbar-right uk-padding uk-padding-remove-top uk-padding-remove-bottom");
-    			add_location(div0, file$9, 21, 8, 672);
+    			add_location(div0, file$9, 21, 8, 669);
     			attr_dev(nav0, "class", "uk-navbar-container");
     			attr_dev(nav0, "uk-navbar", "");
-    			add_location(nav0, file$9, 16, 4, 568);
+    			add_location(nav0, file$9, 16, 4, 565);
     			attr_dev(div1, "uk-sticky", "sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-navbar-transparent uk-hidden@m");
-    			add_location(div1, file$9, 15, 0, 448);
+    			add_location(div1, file$9, 15, 0, 445);
     			attr_dev(ul0, "class", "uk-nav uk-nav-default");
-    			add_location(ul0, file$9, 33, 8, 1161);
+    			add_location(ul0, file$9, 33, 8, 1158);
     			attr_dev(div2, "class", "uk-offcanvas-bar");
-    			add_location(div2, file$9, 32, 4, 1121);
+    			add_location(div2, file$9, 32, 4, 1118);
     			attr_dev(div3, "id", "offcanvas-nav");
     			attr_dev(div3, "uk-offcanvas", "mode:slide; overlay:true; flip:true");
-    			add_location(div3, file$9, 31, 0, 1040);
+    			add_location(div3, file$9, 31, 0, 1037);
     			if (!src_url_equal(img1.src, img1_src_value = "img/eusuhm_logo_text.svg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Logo");
-    			add_location(img1, file$9, 48, 10, 1783);
+    			add_location(img1, file$9, 48, 10, 1780);
     			attr_dev(a2, "href", "/");
-    			add_location(a2, file$9, 47, 8, 1759);
+    			add_location(a2, file$9, 47, 8, 1756);
     			attr_dev(div4, "class", "eus-logo-text uk-navbar-left uk-padding uk-padding-remove-top uk-padding-remove-bottom");
-    			add_location(div4, file$9, 46, 6, 1649);
+    			add_location(div4, file$9, 46, 6, 1646);
     			attr_dev(ul1, "class", "uk-navbar-nav");
-    			add_location(ul1, file$9, 53, 8, 1918);
+    			add_location(ul1, file$9, 53, 8, 1915);
     			attr_dev(div5, "class", "uk-navbar-right");
-    			add_location(div5, file$9, 52, 6, 1879);
+    			add_location(div5, file$9, 52, 6, 1876);
     			attr_dev(nav1, "class", "uk-navbar-container uk-navbar-transparent uk-padding-large uk-padding-remove-top uk-padding-remove-bottom");
     			attr_dev(nav1, "uk-navbar", "");
-    			add_location(nav1, file$9, 43, 4, 1458);
+    			add_location(nav1, file$9, 43, 4, 1455);
     			attr_dev(div6, "class", "uk-visible@m");
-    			add_location(div6, file$9, 42, 0, 1426);
+    			add_location(div6, file$9, 42, 0, 1423);
     			attr_dev(div7, "class", "uk-padding");
-    			add_location(div7, file$9, 64, 2, 2175);
+    			add_location(div7, file$9, 64, 2, 2172);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3181,7 +3181,6 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Rotation after 40 min – More Information";
     			attr_dev(a, "href", "#interactiverooms");
-    			attr_dev(a, "class", "uk-text-small");
     			add_location(a, file$4, 34, 35, 1414);
     		},
     		m: function mount(target, anchor) {
@@ -3248,9 +3247,9 @@ var app = (function () {
     			t4 = space();
     			td2 = element("td");
     			t5 = text(t5_value);
-    			add_location(td0, file$4, 65, 14, 2679);
-    			add_location(td1, file$4, 66, 14, 2709);
-    			add_location(td2, file$4, 73, 14, 3022);
+    			add_location(td0, file$4, 65, 14, 2657);
+    			add_location(td1, file$4, 66, 14, 2687);
+    			add_location(td2, file$4, 73, 14, 3000);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td0, anchor);
@@ -3332,13 +3331,13 @@ var app = (function () {
     			td3 = element("td");
     			t6 = text(t6_value);
     			attr_dev(td0, "class", "no-border");
-    			add_location(td0, file$4, 60, 14, 2433);
+    			add_location(td0, file$4, 60, 14, 2411);
     			attr_dev(td1, "class", "no-border");
-    			add_location(td1, file$4, 61, 14, 2481);
+    			add_location(td1, file$4, 61, 14, 2459);
     			attr_dev(td2, "class", "no-border");
-    			add_location(td2, file$4, 62, 14, 2541);
+    			add_location(td2, file$4, 62, 14, 2519);
     			attr_dev(td3, "class", "no-border");
-    			add_location(td3, file$4, 63, 14, 2600);
+    			add_location(td3, file$4, 63, 14, 2578);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td0, anchor);
@@ -3433,7 +3432,7 @@ var app = (function () {
     		c: function create() {
     			td = element("td");
     			td.textContent = "─";
-    			add_location(td, file$4, 71, 20, 2958);
+    			add_location(td, file$4, 71, 20, 2936);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td, anchor);
@@ -3461,7 +3460,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			td = element("td");
-    			add_location(td, file$4, 69, 20, 2902);
+    			add_location(td, file$4, 69, 20, 2880);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td, anchor);
@@ -3489,7 +3488,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			td = element("td");
-    			add_location(td, file$4, 57, 17, 2347);
+    			add_location(td, file$4, 57, 17, 2325);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td, anchor);
@@ -3562,7 +3561,7 @@ var app = (function () {
     			}
 
     			attr_dev(div, "class", "eus-triplet eus-subevent");
-    			add_location(div, file$4, 87, 16, 3667);
+    			add_location(div, file$4, 87, 16, 3645);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3626,7 +3625,7 @@ var app = (function () {
     			div = element("div");
     			t = text(t_value);
     			attr_dev(div, "class", "eus-flex1 eus-subevent");
-    			add_location(div, file$4, 89, 20, 3771);
+    			add_location(div, file$4, 89, 20, 3749);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3697,9 +3696,9 @@ var app = (function () {
     			? 'eus-Programmebreak'
     			: '') + "");
 
-    			add_location(td, file$4, 77, 12, 3117);
+    			add_location(td, file$4, 77, 12, 3095);
     			attr_dev(tr, "class", tr_class_value = "<!-- Klasse für Titel von parallelen Veranstaltungen --> " + (/*event*/ ctx[8].subevent ? 'eus-subevent-row' : '') + " <!-- Sonderregel für Plenary Session (Anderer Hintergrund) --> " + (/*event*/ ctx[8].plenary ? 'plenary' : '') + "");
-    			add_location(tr, file$4, 44, 10, 1774);
+    			add_location(tr, file$4, 44, 10, 1752);
     		},
     		m: function mount(target, anchor) {
     			if (if_block0) if_block0.m(target, anchor);
@@ -3890,13 +3889,13 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(p, "class", "eus-text-large uk-margin-remove");
-    			add_location(p, file$4, 119, 14, 5016);
+    			add_location(p, file$4, 119, 14, 4994);
     			set_style(div0, "background-color", euscolors[(2 + /*i*/ ctx[4]) % (euscolors.length - 1)]);
     			set_style(div0, "color", "black");
     			attr_dev(div0, "class", "eus-height-100 uk-card uk-card-hover uk-card-body uk-card-small uk-flex uk-flex-middle uk-flex-center");
-    			add_location(div0, file$4, 117, 12, 4783);
+    			add_location(div0, file$4, 117, 12, 4761);
     			attr_dev(div1, "class", "eus-clip");
-    			add_location(div1, file$4, 116, 10, 4747);
+    			add_location(div1, file$4, 116, 10, 4725);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -3994,16 +3993,16 @@ var app = (function () {
     			attr_dev(section0, "class", "uk-padding uk-margin-xlarge");
     			add_location(section0, file$4, 7, 2, 179);
     			attr_dev(h11, "class", "uk-text-center uk-heading-large");
-    			add_location(h11, file$4, 107, 4, 4193);
-    			add_location(h3, file$4, 108, 4, 4265);
-    			add_location(br, file$4, 111, 7, 4442);
-    			add_location(p, file$4, 110, 6, 4338);
+    			add_location(h11, file$4, 107, 4, 4171);
+    			add_location(h3, file$4, 108, 4, 4243);
+    			add_location(br, file$4, 111, 7, 4420);
+    			add_location(p, file$4, 110, 6, 4316);
     			attr_dev(div, "class", "uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-grid-match uk-margin-large-top");
     			attr_dev(div, "uk-grid", "");
-    			add_location(div, file$4, 113, 4, 4506);
+    			add_location(div, file$4, 113, 4, 4484);
     			attr_dev(section1, "id", "interactiverooms");
     			attr_dev(section1, "class", "uk-padding uk-margin-xlarge");
-    			add_location(section1, file$4, 106, 2, 4120);
+    			add_location(section1, file$4, 106, 2, 4098);
     			attr_dev(main, "class", "uk-container");
     			add_location(main, file$4, 5, 0, 146);
     		},
@@ -5051,16 +5050,16 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(h3, "class", "eus-line-height-1");
-    			add_location(h3, file$1, 28, 14, 1677);
+    			add_location(h3, file$1, 28, 14, 1683);
     			set_style(div0, "background-color", euscolors[(2 + /*i*/ ctx[2]) % (euscolors.length - 1)]);
     			attr_dev(div0, "class", "uk-height-small uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center");
-    			add_location(div0, file$1, 27, 12, 1489);
+    			add_location(div0, file$1, 27, 12, 1495);
     			attr_dev(a, "href", /*button*/ ctx[0].url);
     			attr_dev(a, "rel", "noopener");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$1, 26, 10, 1421);
+    			add_location(a, file$1, 26, 10, 1427);
     			attr_dev(div1, "class", "eus-clip");
-    			add_location(div1, file$1, 23, 8, 1206);
+    			add_location(div1, file$1, 23, 8, 1212);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -5142,27 +5141,27 @@ var app = (function () {
     			attr_dev(article0, "id", "");
     			attr_dev(article0, "class", "uk-article uk-padding-remove-bottom");
     			add_location(article0, file$1, 8, 2, 178);
-    			add_location(p, file$1, 13, 6, 648);
+    			add_location(p, file$1, 13, 6, 654);
     			attr_dev(h1, "class", "uk-heading-large");
-    			add_location(h1, file$1, 14, 6, 685);
+    			add_location(h1, file$1, 14, 6, 691);
     			attr_dev(h3, "class", "eus-transform-none");
-    			add_location(h3, file$1, 15, 6, 749);
+    			add_location(h3, file$1, 15, 6, 755);
     			set_style(div0, "max-width", "100%");
     			set_style(div0, "margin", "60px 30px");
     			attr_dev(div0, "class", "eus-clip uk-card uk-card-body uk-background-primary uk-padding-small");
-    			add_location(div0, file$1, 12, 4, 516);
-    			attr_dev(section0, "id", "top");
+    			add_location(div0, file$1, 12, 4, 522);
+    			attr_dev(section0, "id", "jumbotron");
     			attr_dev(section0, "class", "eus-potsdam-bg uk-section uk-section-primary uk-text-center uk-light eus-background-prime uk-padding-remove-top");
     			add_location(section0, file$1, 11, 0, 371);
     			attr_dev(div1, "class", "uk-grid uk-grid-match uk-child-width-1-3@s uk-padding");
     			attr_dev(div1, "uk-grid", "");
-    			add_location(div1, file$1, 21, 4, 1082);
+    			add_location(div1, file$1, 21, 4, 1088);
     			attr_dev(article1, "class", "");
-    			add_location(article1, file$1, 20, 2, 1058);
+    			add_location(article1, file$1, 20, 2, 1064);
     			set_style(section1, "position", "relative");
     			set_style(section1, "top", "-100px");
     			attr_dev(section1, "class", "");
-    			add_location(section1, file$1, 19, 0, 998);
+    			add_location(section1, file$1, 19, 0, 1004);
     			attr_dev(main, "class", "uk-container");
     			add_location(main, file$1, 6, 0, 122);
     		},
