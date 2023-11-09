@@ -5050,15 +5050,15 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(h3, "class", "eus-line-height-1");
-    			add_location(h3, file$1, 28, 14, 1683);
+    			add_location(h3, file$1, 28, 14, 1697);
     			set_style(div0, "background-color", euscolors[(2 + /*i*/ ctx[2]) % (euscolors.length - 1)]);
     			attr_dev(div0, "class", "uk-height-small uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center");
-    			add_location(div0, file$1, 27, 12, 1495);
+    			add_location(div0, file$1, 27, 12, 1509);
     			attr_dev(a, "href", /*button*/ ctx[0].url);
     			attr_dev(a, "rel", "noopener");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$1, 26, 10, 1427);
-    			attr_dev(div1, "class", "eus-clip");
+    			add_location(a, file$1, 26, 10, 1441);
+    			attr_dev(div1, "class", "eus-clip eus-topbutton");
     			add_location(div1, file$1, 23, 8, 1212);
     		},
     		m: function mount(target, anchor) {
