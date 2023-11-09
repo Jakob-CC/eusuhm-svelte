@@ -21,7 +21,7 @@
   <article class="">
     <div class="uk-grid uk-grid-match uk-child-width-1-3@s uk-padding" uk-grid>
       {#each topbuttons as button, i}
-        <div class="eus-clip">
+        <div class="eus-clip eus-topbutton">
           <!-- euscolors contains also darker shades. the first three are the main colors. so length-darkshades -->
           <!-- the first color should not be green, so i+n -->
           <a href="{button.url}" rel="noopener" target="_blank">
