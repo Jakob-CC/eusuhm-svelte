@@ -61,7 +61,7 @@ $: data = $congressData;
             {#if index !== 0}  
               <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
-                    {#if section==='Pricing'}
+                    {#if section==='Registration Fees'}
                         <h1   style="line-height:0; padding-bottom:0;">{section}</h1>
                         <span style="display: inline-block; width:110px"></span>
                         <span style="display: inline-block; width:80px; text-align:right;">early bird</span>
@@ -71,7 +71,7 @@ $: data = $congressData;
                       {/if}
                       <p>
                       {#each Object.entries(details) as [key, value]}
-                                {#if section==='Pricing'}
+                                {#if section==='Registration Fees'}
                                     <span style="display: inline-block; width:110px">{key}</span>
                                     {#each Object.entries(value) as [cat, prices]}
                                         <span style="display: inline-block; width:80px; text-align:right;">{prices}&hairsp;&hairsp;€</span>
