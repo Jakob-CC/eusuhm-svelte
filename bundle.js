@@ -1415,7 +1415,7 @@ var app = (function () {
             line1:'The event’s accreditation will be ',
             line2:'recognized by a medical association.'
         },
-        // 'Pricing': {
+        // 'Registration Fees': {
         //     cat1: 'members:early bird: 280€, then 300€',
         //     cat2: 'non-members:early bird: 380€, then 400€',
         //     cat3: 'students: early bird: 150€, then 170€',
@@ -1423,7 +1423,7 @@ var app = (function () {
         //     cat5: 'nurses: early bird: 120€, then 140€',
         //     evening: 'evening event: 70€'
         //   },
-        'Pricing': {
+        'Registration Fees': {
             members: { early_bird: 280, regular: 300 },
             'non members': { early_bird: 380, regular: 400 },
             students: { early_bird: 150, regular: 170 },
@@ -2225,7 +2225,7 @@ var app = (function () {
     	let p;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*section*/ ctx[3] === 'Pricing') return create_if_block_3$2;
+    		if (/*section*/ ctx[3] === 'Registration Fees') return create_if_block_3$2;
     		return create_else_block_1$1;
     	}
 
@@ -2249,7 +2249,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(p, file$6, 71, 22, 3800);
+    			add_location(p, file$6, 71, 22, 3810);
     		},
     		m: function mount(target, anchor) {
     			if_block.m(target, anchor);
@@ -2328,7 +2328,7 @@ var app = (function () {
     		c: function create() {
     			h1 = element("h1");
     			t = text(t_value);
-    			add_location(h1, file$6, 69, 24, 3729);
+    			add_location(h1, file$6, 69, 24, 3739);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2353,7 +2353,7 @@ var app = (function () {
     	return block;
     }
 
-    // (64:20) {#if section==='Pricing'}
+    // (64:20) {#if section==='Registration Fees'}
     function create_if_block_3$2(ctx) {
     	let h1;
     	let t0_value = /*section*/ ctx[3] + "";
@@ -2379,18 +2379,18 @@ var app = (function () {
     			span2.textContent = "regular";
     			set_style(h1, "line-height", "0");
     			set_style(h1, "padding-bottom", "0");
-    			add_location(h1, file$6, 64, 24, 3307);
+    			add_location(h1, file$6, 64, 24, 3317);
     			set_style(span0, "display", "inline-block");
     			set_style(span0, "width", "110px");
-    			add_location(span0, file$6, 65, 24, 3394);
+    			add_location(span0, file$6, 65, 24, 3404);
     			set_style(span1, "display", "inline-block");
     			set_style(span1, "width", "80px");
     			set_style(span1, "text-align", "right");
-    			add_location(span1, file$6, 66, 24, 3476);
+    			add_location(span1, file$6, 66, 24, 3486);
     			set_style(span2, "display", "inline-block");
     			set_style(span2, "width", "80px");
     			set_style(span2, "text-align", "right");
-    			add_location(span2, file$6, 67, 24, 3586);
+    			add_location(span2, file$6, 67, 24, 3596);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2420,7 +2420,7 @@ var app = (function () {
     		block,
     		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(64:20) {#if section==='Pricing'}",
+    		source: "(64:20) {#if section==='Registration Fees'}",
     		ctx
     	});
 
@@ -2439,7 +2439,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text("  \r\n                                    ");
     			br = element("br");
-    			add_location(br, file$6, 83, 36, 4592);
+    			add_location(br, file$6, 83, 36, 4612);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -2467,7 +2467,7 @@ var app = (function () {
     	return block;
     }
 
-    // (74:32) {#if section==='Pricing'}
+    // (74:32) {#if section==='Registration Fees'}
     function create_if_block_2$2(ctx) {
     	let span;
     	let t0_value = /*key*/ ctx[7] + "";
@@ -2497,8 +2497,8 @@ var app = (function () {
     			br = element("br");
     			set_style(span, "display", "inline-block");
     			set_style(span, "width", "110px");
-    			add_location(span, file$6, 74, 36, 3971);
-    			add_location(br, file$6, 80, 36, 4457);
+    			add_location(span, file$6, 74, 36, 3991);
+    			add_location(br, file$6, 80, 36, 4477);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2554,7 +2554,7 @@ var app = (function () {
     		block,
     		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(74:32) {#if section==='Pricing'}",
+    		source: "(74:32) {#if section==='Registration Fees'}",
     		ctx
     	});
 
@@ -2576,7 +2576,7 @@ var app = (function () {
     			set_style(span, "display", "inline-block");
     			set_style(span, "width", "80px");
     			set_style(span, "text-align", "right");
-    			add_location(span, file$6, 76, 40, 4158);
+    			add_location(span, file$6, 76, 40, 4178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2607,7 +2607,7 @@ var app = (function () {
     	let if_block_anchor;
 
     	function select_block_type_3(ctx, dirty) {
-    		if (/*section*/ ctx[3] === 'Pricing') return create_if_block_2$2;
+    		if (/*section*/ ctx[3] === 'Registration Fees') return create_if_block_2$2;
     		return create_else_block$2;
     	}
 
