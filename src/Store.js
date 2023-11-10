@@ -4,17 +4,19 @@ let eventid = 1381;
 
 const basePath = window.location.origin;
 export const navbarlinks = [
+  // Name of Link, Hyperlink, Target(self=>same window, blank=>new tab)
   ["Home", `${basePath}/`, "_self"],
   ["About The Congress", `${basePath}/about`, "_self"],
   ["Accomodation", `${basePath}/accomodation`, "_self"],
+  ["Registration Fees", `${basePath}/registrationfees`, "_blank"],
   // ["Contact", `${basePath}/#contact`, "_self"],
   // ["Submit", `${basePath}/submit`, "_self"]
 ];
 
 export const topbuttons = [
   // { label: "3rd to 5th of October 2024", url: "#date" },
-  { label: "Registration 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
-  { label: "Abstract Submission 15.01.2024", url: "/submit"},
+  { label: "Registration Opening 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
+  { label: "Abstract Submission Opening 15.01.2024", url: "/submit"},
   { label: "Programme Overview",    url: "/programme" }
 ];
 

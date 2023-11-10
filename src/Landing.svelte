@@ -5,7 +5,7 @@ import { congressData } from './CongressData.js';
 // Auto-Subscription des Svelte Stores
 $: data = $congressData;
 
-  let notdisplayed = "Wissenschaftliche Leitung";
+  let notdisplayed = 'Registration Fees';
 </script>
 
 <!-- MAIN CONTENT -->

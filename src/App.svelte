@@ -13,6 +13,7 @@
 	import About from './About.svelte';
 	import Jumbotron from './Jumbotron.svelte';
 	import Maintopics from './maintopics.svelte';
+	import RegistrationFees from './RegistrationFees.svelte';
 
 	// subpages setup
 	let currentRoute = window.location.pathname;
@@ -47,6 +48,11 @@
 {:else if currentRoute === '/about'}
 	<About />
 	<Jumbotron />
+	<Footer />
+
+{:else if currentRoute === '/registrationfees' }
+	<RegistrationFees />
+	<Contact />
 	<Footer />
 
 {:else}
