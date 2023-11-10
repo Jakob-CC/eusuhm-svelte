@@ -321,15 +321,16 @@ a:hover {
     border-bottom:1px solid var(--color-main); 
     padding-bottom:10px;
     padding-right: 10px;
+    padding-left: 5px;
 }
 
 .eus-fee-title {
     max-width: 100vw;
-    width: 79px;
+    width: 77px;
     border-bottom: none;
     border-left: 1px solid var(--color-main);
     padding-left: 4px;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
     margin-block-start: 0em !important;
     margin-block-end: 0em !important; 
     margin-top: 0;
@@ -339,6 +340,7 @@ a:hover {
 
 .eus-fee-details {
     margin-left:0px;
+    width: 79px;    
 }
 
 .eus-fee-spacer {

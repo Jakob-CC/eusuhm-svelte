@@ -19,7 +19,7 @@
                       <h1   class="uk-heading-small">{section}</h1>
                       <ul class="uk-list uk-text-large">
                           <li class="uk-padding-bottom-remove">
-                              <span class="eus-fee eus-fee-title eus-fee-spacer"></span>
+                              <span class="eus-fee eus-fee-title eus-fee-spacer" style="width:257px"></span>
                               <div style="display:inline-block">
                                   <span class="eus-fee eus-fee-title">Early </span>
                                   <span class="eus-fee eus-fee-title">Regular </span>
@@ -27,7 +27,7 @@
                               </div>
                           </li>
                           <li class="uk-text-small" style="margin-top:0">
-                              <span class="eus-fee eus-fee-title eus-fee-spacer uk-text-top" style="line-height: 0px; padding-bottom:0;"></span>
+                              <span class="eus-fee eus-fee-title eus-fee-spacer" style="line-height: 0px; padding-bottom:0;"></span>
                               <div style="display:inline-block">
                                   <span class="eus-fee eus-fee-title eus-fee-details uk-text-top">Early Rate until 1st&nbsp;July 2024</span>
                                   <span class="eus-fee eus-fee-title eus-fee-details uk-text-top">Regular Rate</span>
@@ -44,7 +44,7 @@
                                   <span class="eus-fee eus-fee-title eus-fee-spacer uk-text-large">{key}</span>
                                   <div style="display:inline-block">
                                       {#each Object.entries(value) as [cat, prices]}
-                                          <span class="eus-fee">{prices}&hairsp;&hairsp;€</span>
+                                          <span class="eus-fee ">{prices}&hairsp;&hairsp;€</span>
                                       {/each}
                                   </div>
                               </li>
