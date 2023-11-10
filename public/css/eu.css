@@ -303,9 +303,6 @@ a:hover {
     /* border-bottom: 2px solid white; */
 /* } */
 
-.eus-topbutton {
-    /* border-top: 2px solid rgba(0,0,0,0); */
-}
 
 .eus-topbutton:hover {
     /* border-bottom: 2px solid rgba(0,0,0,0); */
@@ -316,6 +313,35 @@ a:hover {
     /* border-bottom: 2px solid rgba(0,0,0,0); */
     transform: translate(0, 8px);
 }
+
+.eus-fee {
+    display: inline-block; 
+    width:80px; 
+    max-width: calc(30vw);
+    border-bottom:1px solid var(--color-main); 
+    padding-bottom:10px;
+    padding-right: 10px;
+}
+
+.eus-fee-title {
+    max-width: 100vw;
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important; 
+    margin-top: 0;
+    
+}
+
+.eus-fee-details {
+    margin-left:0px;
+}
+
+.eus-fee-spacer {
+    width:260px;    
+}
+
+
 
 @media screen and (max-width: 600px) {
     .eus-triplet {
