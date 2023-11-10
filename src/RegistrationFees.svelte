@@ -42,7 +42,7 @@
                     {#each Object.entries(details) as [key, value]}
                               <li>
                                   <span class="eus-fee eus-fee-title eus-fee-spacer uk-text-large">{key}</span>
-                                  <div style="display:inline-block">
+                                  <div style="display:inline-block; margin-top:5px">
                                       {#each Object.entries(value) as [cat, prices]}
                                           <span class="eus-fee ">{prices}&hairsp;&hairsp;€</span>
                                       {/each}
@@ -55,6 +55,14 @@
             </div>
           {/if}
       {/each}
+        
+        <h3>The registration fee includes</h3>
+        <p style="max-width:600px">admission to all congress
+            sessions, poster and exhibition areas, congress materials (final
+            programme, book of abstracts, congress bag, ID card),
+            lunches, coffee breaks, welcome reception.
+        </p>
+        <br>
     </article>
 </div>
     
