@@ -222,7 +222,9 @@ export const eventSchedule = writable({
     {
       startTime: '12:00',
       endTime: '1:15',
-      event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators\u00A0Wrap\u00A0Up'
+      event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators\u00A0Wrap\u00A0Up',
+      subevent: 'Plenary Session',
+      plenary: true,
     },
     {
       startTime: '1:15',
@@ -232,7 +234,8 @@ export const eventSchedule = writable({
     {
       startTime: '1:30',
       endTime: '2:30',
-      event: 'Closing Session - Think Globally, Act Locally'
+      event: 'Think Globally, Act Locally',
+      subevent: 'Closing Session',
     },
     {
       startTime: '2:30',
