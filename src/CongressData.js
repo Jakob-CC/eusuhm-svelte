@@ -69,9 +69,9 @@ export const congressData = writable({
         'Full\u00A0Participant EUSUHM\u00A0Member': { early_bird: 280, regular: 300, late: 330 },
         'Full\u00A0Participant Non\u2011EUSUHM\u00A0Member': { early_bird: 380, regular: 400, late: 430 },
         Student: { early_bird: 150, regular: 170, late: 190 },
-        'Daily ticket': { early_bird: 120, regular: 140, late: 180 },
+        'Daily Ticket': { early_bird: 120, regular: 140, late: 180 },
         //'Daily ticket ': { early_bird: 120, regular: 140, late: 160 },
-        'Attendee only of School\u00A0Nurse\u00A0Session': { early_bird: 120, regular: 140, late: 160 },
+        'Attendance for the School Nurse Session only': { early_bird: 120, regular: 140, late: 160 },
         'Congress Gala Dinner': { early_bird:70, regular:70, late:70}
     }
 });

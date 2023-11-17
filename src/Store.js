@@ -15,8 +15,8 @@ export const navbarlinks = [
 
 export const topbuttons = [
   // { label: "3rd to 5th of October 2024", url: "#date" },
-  { label: "Registration Opening 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
-  { label: "Abstract Submission Opening 15.01.2024", url: "/submit"},
+  { label: "Registration",       label2:"Opening 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
+  { label: "Abstract Submission",label2:" Opening 15.01.2024",        url: "/submit"},
   { label: "Programme Overview",    url: "/programme" }
 ];
 
