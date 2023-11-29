@@ -1403,12 +1403,12 @@ var app = (function () {
         ],
         'Location': {
             name: 'Oberlinschule',
-            address: 'Rudolf-Breitscheid-Straße 24',
+            address: 'Rudolf-Breitscheid-Straße\u00A024',
             city: '14482 Potsdam',
         },
         'Organiser': {
             company: 'Congress Compact 2C GmbH',
-            contact: 'Gina Braun, Gina Isemann, Anne Klein',
+            contact: 'Gina\u00A0Braun, Gina\u00A0Isemann, Anne\u00A0Klein',
             address: 'Joachimsthaler Straße 31-32', 
             address2: '10719\u00A0Berlin',
             phone: '+49 30 88727370',
@@ -1500,7 +1500,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t = space();
     			attr_dev(div, "class", "eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top");
-    			add_location(div, file$7, 17, 14, 577);
+    			add_location(div, file$7, 17, 14, 576);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1565,7 +1565,7 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(h1, "class", "eus-line-height-1");
-    			add_location(h1, file$7, 19, 22, 738);
+    			add_location(h1, file$7, 19, 22, 737);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -1636,7 +1636,7 @@ var app = (function () {
     		c: function create() {
     			t = text(t_value);
     			br = element("br");
-    			add_location(br, file$7, 48, 37, 2733);
+    			add_location(br, file$7, 48, 37, 2798);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -1684,7 +1684,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(div, "class", "uk-grid");
-    			add_location(div, file$7, 26, 30, 1141);
+    			add_location(div, file$7, 26, 30, 1140);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1776,9 +1776,9 @@ var app = (function () {
     			}
 
     			attr_dev(ul, "class", "uk-list eus-margin-0");
-    			add_location(ul, file$7, 38, 46, 2168);
+    			add_location(ul, file$7, 38, 46, 2220);
     			attr_dev(div, "class", "uk-width-1-2 eus-width-1-1-mobile");
-    			add_location(div, file$7, 37, 40, 2073);
+    			add_location(div, file$7, 37, 40, 2125);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1836,11 +1836,11 @@ var app = (function () {
     function create_if_block_8(ctx) {
     	let div;
     	let a;
-    	let h3;
+    	let h2;
     	let t0_value = /*innerValue*/ ctx[15] + "";
     	let t0;
     	let t1;
-    	let p;
+    	let h3;
     	let t2_value = /*value*/ ctx[8].fullname + "";
     	let t2;
     	let a_href_value;
@@ -1849,30 +1849,30 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			a = element("a");
-    			h3 = element("h3");
+    			h2 = element("h2");
     			t0 = text(t0_value);
     			t1 = space();
-    			p = element("p");
+    			h3 = element("h3");
     			t2 = text(t2_value);
-    			attr_dev(h3, "class", "eus-line-height-1 eus-topborder eus-margin-0");
-    			add_location(h3, file$7, 32, 44, 1652);
-    			attr_dev(p, "class", "uk-padding-remove");
-    			add_location(p, file$7, 33, 48, 1776);
+    			attr_dev(h2, "class", "eus-line-height-1 eus-topborder eus-margin-0 ");
+    			add_location(h2, file$7, 32, 44, 1651);
+    			attr_dev(h3, "class", "eus-text-green uk-padding-remove uk-margin-remove uk-padding-bottom");
+    			add_location(h3, file$7, 33, 48, 1776);
     			attr_dev(a, "href", a_href_value = /*value*/ ctx[8].link);
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "rel", "noopener");
-    			add_location(a, file$7, 31, 44, 1552);
+    			add_location(a, file$7, 31, 44, 1551);
     			attr_dev(div, "class", "uk-width-1-2 eus-width-1-1-mobile");
-    			add_location(div, file$7, 29, 40, 1370);
+    			add_location(div, file$7, 29, 40, 1369);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, a);
-    			append_dev(a, h3);
-    			append_dev(h3, t0);
+    			append_dev(a, h2);
+    			append_dev(h2, t0);
     			append_dev(a, t1);
-    			append_dev(a, p);
-    			append_dev(p, t2);
+    			append_dev(a, h3);
+    			append_dev(h3, t2);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*data*/ 1 && t0_value !== (t0_value = /*innerValue*/ ctx[15] + "")) set_data_dev(t0, t0_value);
@@ -1908,8 +1908,8 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			attr_dev(li, "class", "eus-margin-0");
-    			add_location(li, file$7, 40, 54, 2337);
+    			attr_dev(li, "class", "eus-margin-0 uk-text-lead");
+    			add_location(li, file$7, 40, 54, 2389);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -2091,8 +2091,8 @@ var app = (function () {
     			t = space();
     			br = element("br");
     			attr_dev(div, "class", "eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top");
-    			add_location(div, file$7, 59, 14, 3044);
-    			add_location(br, file$7, 76, 14, 3983);
+    			add_location(div, file$7, 59, 14, 3109);
+    			add_location(br, file$7, 76, 14, 4062);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2160,10 +2160,10 @@ var app = (function () {
     			}
 
     			attr_dev(h1, "class", "uk-margin-remove");
-    			add_location(h1, file$7, 61, 20, 3203);
-    			attr_dev(p, "class", "uk-margin-remove");
+    			add_location(h1, file$7, 61, 20, 3268);
+    			attr_dev(p, "class", "uk-margin-remove uk-text-large");
     			set_style(p, "padding-left", "2px");
-    			add_location(p, file$7, 62, 20, 3268);
+    			add_location(p, file$7, 62, 20, 3333);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2267,7 +2267,7 @@ var app = (function () {
     			t = text(t_value);
     			attr_dev(a, "class", "uk-link-muted");
     			attr_dev(a, "href", a_href_value = "tel:" + /*value*/ ctx[8]);
-    			add_location(a, file$7, 67, 36, 3638);
+    			add_location(a, file$7, 67, 36, 3717);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -2309,7 +2309,7 @@ var app = (function () {
     			t = text(t_value);
     			attr_dev(a, "class", "uk-link-muted");
     			attr_dev(a, "href", a_href_value = "mailto:" + /*value*/ ctx[8]);
-    			add_location(a, file$7, 65, 36, 3484);
+    			add_location(a, file$7, 65, 36, 3563);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -2357,7 +2357,7 @@ var app = (function () {
     			if_block.c();
     			t = text("\r\n                                 ");
     			br = element("br");
-    			add_location(br, file$7, 71, 38, 3859);
+    			add_location(br, file$7, 71, 38, 3938);
     		},
     		m: function mount(target, anchor) {
     			if_block.m(target, anchor);
@@ -2471,15 +2471,15 @@ var app = (function () {
     			}
 
     			attr_dev(div0, "class", "uk-width-1-2 eus-width-1-1-mobile");
-    			add_location(div0, file$7, 14, 4, 414);
+    			add_location(div0, file$7, 14, 4, 413);
     			attr_dev(div1, "class", "uk-width-1-2");
-    			add_location(div1, file$7, 56, 4, 2902);
+    			add_location(div1, file$7, 56, 4, 2967);
     			attr_dev(div2, "class", "uk-grid uk-grid-column");
-    			add_location(div2, file$7, 13, 2, 372);
+    			add_location(div2, file$7, 13, 2, 371);
     			attr_dev(article, "id", "landing-data");
     			attr_dev(article, "class", "uk-padding-remove-top");
-    			add_location(article, file$7, 12, 0, 311);
-    			attr_dev(main, "class", "uk-container uk-padding-remove-top");
+    			add_location(article, file$7, 12, 0, 310);
+    			attr_dev(main, "class", "uk-container eus-padding-remove-s");
     			add_location(main, file$7, 11, 0, 260);
     		},
     		l: function claim(nodes) {
