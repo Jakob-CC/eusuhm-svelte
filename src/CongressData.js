@@ -15,7 +15,7 @@ export const congressData = writable({
         },
         {
             organisation: 'ScolarMed',
-            fullname: 'Swiss Association of Specialists in\u00A0the\u00A0School Health Service',
+            fullname: 'Swiss Association of Specialists in\u00A0the\u00A0School Health\u00A0Service',
             link: 'https://www.scolarmed.ch/index.php/de/',
             members: ['Tina Huber-Gieseke', 'Susanne Stronski']
         },
@@ -27,7 +27,7 @@ export const congressData = writable({
         },
         {
             organisation: 'DGÖG',
-            fullname: 'German Association for\u00A0Public Health Service',
+            fullname: 'German Association for\u00A0Public\u00A0Health\u00A0Service',
             link: 'https://www.dgoeg.de/',
             members: ['Claudia Korebrits']
         },
@@ -45,7 +45,7 @@ export const congressData = writable({
     },
     'Organiser': {
         company: 'Congress Compact 2C GmbH',
-        contact: 'Gina Braun, Anne Klein',
+        contact: 'Gina Braun, Gina Isemann, Anne Klein',
         address: 'Joachimsthaler Straße 31-32', 
         address2: '10719\u00A0Berlin',
         phone: '+49 30 88727370',
