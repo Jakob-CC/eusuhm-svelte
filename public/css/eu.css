@@ -389,7 +389,7 @@ a:hover {
 
 @media screen and (max-width: 900px) {
     .eus-width-1-1-mobile { 
-        width: 300px;
+        width: calc(360px);
         padding:  0px 0 0px 30px;
         margin: 0;
     }
@@ -398,6 +398,10 @@ a:hover {
     }
     .eus-width-1-1-mobile:last-child { 
         padding-bottom: 30px;
+    }
+
+    .eus-padding-remove-s {
+        padding: 0;
     }
 }
 
@@ -409,3 +413,8 @@ a:hover {
 .eus-highlight {
     color: var(--color-main);
 }
+
+.eus-text-green {
+    color: var(--color-main);
+}
+

@@ -9,7 +9,7 @@ $: data = $congressData;
 </script>
 
 <!-- MAIN CONTENT -->
-<main class="uk-container uk-padding-remove-top">
+<main class="uk-container eus-padding-remove-s">
 <article id="landing-data" class="uk-padding-remove-top">
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
@@ -30,15 +30,15 @@ $: data = $congressData;
                                         <div class="uk-width-1-2 eus-width-1-1-mobile">
                                             <!-- Regel für "BVÖGD" und solche Titel -->
                                             <a href="{value.link}" target="_blank" rel="noopener">
-                                            <h3 class="eus-line-height-1 eus-topborder eus-margin-0">{innerValue}</h3>
-                                                <p class="uk-padding-remove">{value.fullname}</p>
+                                            <h2 class="eus-line-height-1 eus-topborder eus-margin-0 ">{innerValue}</h2>
+                                                <h3 class="eus-text-green uk-padding-remove uk-margin-remove uk-padding-bottom">{value.fullname}</h3>
                                             </a>
                                         </div>
                                     {:else if innerKey==='members'}<!-- Keine Aktion für index 1 und 2 -->
                                         <div class="uk-width-1-2 eus-width-1-1-mobile">
                                               <ul class="uk-list eus-margin-0">
                                                   {#each innerValue as person}
-                                                      <li class="eus-margin-0">{person}</li>
+                                                      <li class="eus-margin-0 uk-text-lead">{person}</li>
                                                   {/each}
                                               </ul>
                                         </div>
@@ -60,7 +60,7 @@ $: data = $congressData;
               <div class="eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top">
                   {#if section!==notdisplayed}
                     <h1 class="uk-margin-remove">{section}</h1>
-                    <p class="uk-margin-remove" style="padding-left:2px;">
+                    <p class="uk-margin-remove uk-text-large" style="padding-left:2px;">
                       {#each Object.entries(details) as [key, value]}
                                 {#if key==='email'}
                                     <a class="uk-link-muted" href="mailto:{value}">{value}</a>

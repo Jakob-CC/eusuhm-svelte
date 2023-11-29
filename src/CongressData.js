@@ -40,12 +40,12 @@ export const congressData = writable({
     ],
     'Location': {
         name: 'Oberlinschule',
-        address: 'Rudolf-Breitscheid-Straße 24',
+        address: 'Rudolf-Breitscheid-Straße\u00A024',
         city: '14482 Potsdam',
     },
     'Organiser': {
         company: 'Congress Compact 2C GmbH',
-        contact: 'Gina Braun, Gina Isemann, Anne Klein',
+        contact: 'Gina\u00A0Braun, Gina\u00A0Isemann, Anne\u00A0Klein',
         address: 'Joachimsthaler Straße 31-32', 
         address2: '10719\u00A0Berlin',
         phone: '+49 30 88727370',
