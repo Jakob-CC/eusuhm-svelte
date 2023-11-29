@@ -9,7 +9,7 @@ $: data = $congressData;
 </script>
 
 <!-- MAIN CONTENT -->
-<main class="uk-container eus-padding-remove-s">
+<main class="uk-container eus-padding-remove">
 <article id="landing-data" class="uk-padding-remove-top">
   <div class="uk-grid uk-grid-column">
     <div class="uk-width-1-2 eus-width-1-1-mobile">
@@ -69,7 +69,7 @@ $: data = $congressData;
                                 {:else}
                                     {value} 
                                 {/if}
-                                &nbsp;<br>
+                                &nbsp;<br> 
                       {/each}
                     </p>
                   {/if}
