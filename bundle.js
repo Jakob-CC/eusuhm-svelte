@@ -546,8 +546,8 @@ var app = (function () {
 
     const topbuttons = [
       // { label: "3rd to 5th of October 2024", url: "#date" },
-      { label: "Registration Opening 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
-      { label: "Abstract Submission Opening 15.01.2024", url: "/submit"},
+      { label: "Registration",       label2:"Opening 15.01.2024",        url: "https://www.congress-compact.de/veranstaltungskalender?anmeldung=" + eventid },
+      { label: "Abstract Submission",label2:" Opening 15.01.2024",        url: "/submit"},
       { label: "Programme Overview",    url: "/programme" }
     ];
 
@@ -753,7 +753,9 @@ var app = (function () {
         {
           startTime: '12:00',
           endTime: '1:15',
-          event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators\u00A0Wrap\u00A0Up'
+          event: 'Lessons Learnt to Reduce the Health and Educational Gap in Children and Students - Moderators\u00A0Wrap\u00A0Up',
+          subevent: 'Plenary Session',
+          plenary: true,
         },
         {
           startTime: '1:15',
@@ -763,7 +765,8 @@ var app = (function () {
         {
           startTime: '1:30',
           endTime: '2:30',
-          event: 'Closing Session - Think Globally, Act Locally'
+          event: 'Think Globally, Act Locally',
+          subevent: 'Closing Session',
         },
         {
           startTime: '2:30',
@@ -1429,9 +1432,9 @@ var app = (function () {
             'Full\u00A0Participant EUSUHM\u00A0Member': { early_bird: 280, regular: 300, late: 330 },
             'Full\u00A0Participant Non\u2011EUSUHM\u00A0Member': { early_bird: 380, regular: 400, late: 430 },
             Student: { early_bird: 150, regular: 170, late: 190 },
-            'Daily ticket': { early_bird: 120, regular: 140, late: 180 },
+            'Daily Ticket': { early_bird: 120, regular: 140, late: 180 },
             //'Daily ticket ': { early_bird: 120, regular: 140, late: 160 },
-            'Attendee only of School\u00A0Nurse\u00A0Session': { early_bird: 120, regular: 140, late: 160 },
+            'Attendance for the School Nurse Session only': { early_bird: 120, regular: 140, late: 160 },
             'Congress Gala Dinner': { early_bird:70, regular:70, late:70}
         }
     });
@@ -2173,7 +2176,7 @@ var app = (function () {
     }
 
     // (61:12) {#if index !== 0}
-    function create_if_block$3(ctx) {
+    function create_if_block$4(ctx) {
     	let div;
     	let t;
     	let if_block = /*section*/ ctx[3] !== /*notdisplayed*/ ctx[1] && create_if_block_1$3(ctx);
@@ -2213,7 +2216,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$3.name,
+    		id: create_if_block$4.name,
     		type: "if",
     		source: "(61:12) {#if index !== 0}",
     		ctx
@@ -2659,7 +2662,7 @@ var app = (function () {
     // (60:8) {#each Object.entries(data) as [section, details], index}
     function create_each_block$6(ctx) {
     	let if_block_anchor;
-    	let if_block = /*index*/ ctx[6] !== 0 && create_if_block$3(ctx);
+    	let if_block = /*index*/ ctx[6] !== 0 && create_if_block$4(ctx);
 
     	const block = {
     		c: function create() {
@@ -2898,8 +2901,141 @@ var app = (function () {
     	let h1;
     	let t1;
     	let div0;
-    	let a;
+    	let a0;
     	let button;
+    	let t3;
+    	let h2;
+    	let t5;
+    	let p0;
+    	let t7;
+    	let h30;
+    	let t9;
+    	let h40;
+    	let t11;
+    	let ul0;
+    	let li0;
+    	let t13;
+    	let li1;
+    	let t15;
+    	let h41;
+    	let t17;
+    	let ul1;
+    	let li2;
+    	let span0;
+    	let t19;
+    	let span1;
+    	let t21;
+    	let t22;
+    	let li3;
+    	let t24;
+    	let li4;
+    	let t26;
+    	let li5;
+    	let t28;
+    	let h31;
+    	let t30;
+    	let h42;
+    	let t32;
+    	let ul2;
+    	let li6;
+    	let t34;
+    	let li7;
+    	let t36;
+    	let li8;
+    	let t38;
+    	let li9;
+    	let t40;
+    	let li10;
+    	let t42;
+    	let li11;
+    	let t44;
+    	let h43;
+    	let t46;
+    	let p1;
+    	let t48;
+    	let h32;
+    	let t50;
+    	let ul6;
+    	let li12;
+    	let span2;
+    	let t52;
+    	let span3;
+    	let t54;
+    	let span4;
+    	let t56;
+    	let t57;
+    	let li13;
+    	let span5;
+    	let t59;
+    	let span6;
+    	let t61;
+    	let t62;
+    	let li20;
+    	let span7;
+    	let t64;
+    	let a1;
+    	let t66;
+    	let ul4;
+    	let li14;
+    	let t68;
+    	let li19;
+    	let t69;
+    	let ul3;
+    	let li15;
+    	let t71;
+    	let li16;
+    	let t73;
+    	let li17;
+    	let t75;
+    	let li18;
+    	let t77;
+    	let li24;
+    	let span8;
+    	let t79;
+    	let ul5;
+    	let li21;
+    	let t81;
+    	let li22;
+    	let t83;
+    	let li23;
+    	let t85;
+    	let h33;
+    	let t87;
+    	let p2;
+    	let t88;
+    	let a2;
+    	let t90;
+    	let t91;
+    	let h34;
+    	let t93;
+    	let ul7;
+    	let li25;
+    	let t95;
+    	let li26;
+    	let t97;
+    	let li27;
+    	let t99;
+    	let li28;
+    	let t101;
+    	let li29;
+    	let t103;
+    	let li30;
+    	let t105;
+    	let li31;
+    	let t107;
+    	let li32;
+    	let t109;
+    	let li33;
+    	let t111;
+    	let li34;
+    	let t113;
+    	let li35;
+    	let t115;
+    	let li36;
+    	let t117;
+    	let li37;
+    	let t119;
+    	let li38;
 
     	const block = {
     		c: function create() {
@@ -2908,9 +3044,198 @@ var app = (function () {
     			h1.textContent = "Submit your abstract here";
     			t1 = space();
     			div0 = element("div");
-    			a = element("a");
+    			a0 = element("a");
     			button = element("button");
     			button.textContent = "Submit";
+    			t3 = space();
+    			h2 = element("h2");
+    			h2.textContent = "Rules for Abstract Submission";
+    			t5 = space();
+    			p0 = element("p");
+    			p0.textContent = "Please read the submission rules before submitting an abstract.";
+    			t7 = space();
+    			h30 = element("h3");
+    			h30.textContent = "Abstracts must be submitted online via the website only (www.EUSUHM.info).";
+    			t9 = space();
+    			h40 = element("h4");
+    			h40.textContent = "Submission and Presentation Type";
+    			t11 = space();
+    			ul0 = element("ul");
+    			li0 = element("li");
+    			li0.textContent = "Abstracts may be submitted for oral or printed poster presentation. The Programme Committee will determine whether the abstract will be accepted for presentation, with consideration given to the author’s preference.";
+    			t13 = space();
+    			li1 = element("li");
+    			li1.textContent = "Abstracts must be received by the announced deadline. Abstracts received after the deadline will not be considered.";
+    			t15 = space();
+    			h41 = element("h4");
+    			h41.textContent = "Limitations";
+    			t17 = space();
+    			ul1 = element("ul");
+    			li2 = element("li");
+    			span0 = element("span");
+    			span0.textContent = "Presenting author must be registered participant.";
+    			t19 = text(" Only abstracts of authors who have paid their registration fees by ");
+    			span1 = element("span");
+    			span1.textContent = "the Early Registration Deadline";
+    			t21 = text(" will be scheduled for presentation and included for publication.");
+    			t22 = space();
+    			li3 = element("li");
+    			li3.textContent = "The presenting author is required to ensure that all co-authors are aware of the content of the abstract and agree to its submission, before submitting the abstract.";
+    			t24 = space();
+    			li4 = element("li");
+    			li4.textContent = "Abstracts must be submitted in British English.";
+    			t26 = space();
+    			li5 = element("li");
+    			li5.textContent = "Disclosure of Conflicts of Interest: Abstract submitters will be required to disclose any conflict of interests in the submission form.";
+    			t28 = space();
+    			h31 = element("h3");
+    			h31.textContent = "Guidelines for Submission";
+    			t30 = space();
+    			h42 = element("h4");
+    			h42.textContent = "Before you begin, please prepare the following information.";
+    			t32 = space();
+    			ul2 = element("ul");
+    			li6 = element("li");
+    			li6.textContent = "Presenting author’s contact details.";
+    			t34 = space();
+    			li7 = element("li");
+    			li7.textContent = "Full first and family name(s)";
+    			t36 = space();
+    			li8 = element("li");
+    			li8.textContent = "Email address";
+    			t38 = space();
+    			li9 = element("li");
+    			li9.textContent = "Affiliation details: department, institution, city, state (if relevant), country";
+    			t40 = space();
+    			li10 = element("li");
+    			li10.textContent = "Phone number.";
+    			t42 = space();
+    			li11 = element("li");
+    			li11.textContent = "Author’s and co-authors’ details";
+    			t44 = space();
+    			h43 = element("h4");
+    			h43.textContent = "Preferred Presentation type";
+    			t46 = space();
+    			p1 = element("p");
+    			p1.textContent = "Oral or E-Poster";
+    			t48 = space();
+    			h32 = element("h3");
+    			h32.textContent = "Abstract Content";
+    			t50 = space();
+    			ul6 = element("ul");
+    			li12 = element("li");
+    			span2 = element("span");
+    			span2.textContent = "Abstract title";
+    			t52 = text(" – must be in ");
+    			span3 = element("span");
+    			span3.textContent = "UPPER CASE";
+    			t54 = text(" and ");
+    			span4 = element("span");
+    			span4.textContent = "limited to 150 characters";
+    			t56 = text(".");
+    			t57 = space();
+    			li13 = element("li");
+    			span5 = element("span");
+    			span5.textContent = "Abstract text";
+    			t59 = text(" – is limited to ");
+    			span6 = element("span");
+    			span6.textContent = "3000 characters";
+    			t61 = text(" including acknowledgements.");
+    			t62 = space();
+    			li20 = element("li");
+    			span7 = element("span");
+    			span7.textContent = "Abstract topic";
+    			t64 = text(" – select the abstract topic from the ");
+    			a1 = element("a");
+    			a1.textContent = "list of topics.";
+    			t66 = space();
+    			ul4 = element("ul");
+    			li14 = element("li");
+    			li14.textContent = "Please note, that the list of topics refers to settings for children, adolescents, and students";
+    			t68 = space();
+    			li19 = element("li");
+    			t69 = text("Abstracts should clearly state:\r\n                    ");
+    			ul3 = element("ul");
+    			li15 = element("li");
+    			li15.textContent = "Background and aims";
+    			t71 = space();
+    			li16 = element("li");
+    			li16.textContent = "Methods";
+    			t73 = space();
+    			li17 = element("li");
+    			li17.textContent = "Results";
+    			t75 = space();
+    			li18 = element("li");
+    			li18.textContent = "Conclusions with Take Home Messages";
+    			t77 = space();
+    			li24 = element("li");
+    			span8 = element("span");
+    			span8.textContent = "Abstract with case report";
+    			t79 = space();
+    			ul5 = element("ul");
+    			li21 = element("li");
+    			li21.textContent = "Case Descriptions Including Health and Education Needs";
+    			t81 = space();
+    			li22 = element("li");
+    			li22.textContent = "Intervention";
+    			t83 = space();
+    			li23 = element("li");
+    			li23.textContent = "Take Home Message";
+    			t85 = space();
+    			h33 = element("h3");
+    			h33.textContent = "Completion of Procedure";
+    			t87 = space();
+    			p2 = element("p");
+    			t88 = text("You will receive an abstract ID number via email after you have submitted your abstract.\r\n        Please refer to this abstract number in all correspondence regarding the abstract.\r\n        Please ");
+    			a2 = element("a");
+    			a2.textContent = "contact us";
+    			t90 = text(" if you have not received confirmation that your abstract has been submitted.");
+    			t91 = space();
+    			h34 = element("h3");
+    			h34.textContent = "List of Topics Referring to Settings for Children, Adolescents, Students";
+    			t93 = space();
+    			ul7 = element("ul");
+    			li25 = element("li");
+    			li25.textContent = "Early Childhood Interventions";
+    			t95 = space();
+    			li26 = element("li");
+    			li26.textContent = "Showcasing School Health Services";
+    			t97 = space();
+    			li27 = element("li");
+    			li27.textContent = "Mental Health";
+    			t99 = space();
+    			li28 = element("li");
+    			li28.textContent = "Chronic Health Conditions, Including Case Reports";
+    			t101 = space();
+    			li29 = element("li");
+    			li29.textContent = "Special Needs";
+    			t103 = space();
+    			li30 = element("li");
+    			li30.textContent = "School Absences & School Health Services";
+    			t105 = space();
+    			li31 = element("li");
+    			li31.textContent = "Qualification of Health Professionals";
+    			t107 = space();
+    			li32 = element("li");
+    			li32.textContent = "Health Monitoring – Data for Action";
+    			t109 = space();
+    			li33 = element("li");
+    			li33.textContent = "Health Promotion & School Health Services";
+    			t111 = space();
+    			li34 = element("li");
+    			li34.textContent = "Sexuality, Puberty, Diversity";
+    			t113 = space();
+    			li35 = element("li");
+    			li35.textContent = "Post Pandemic - Impact on Health";
+    			t115 = space();
+    			li36 = element("li");
+    			li36.textContent = "Intersectoral Collaboration";
+    			t117 = space();
+    			li37 = element("li");
+    			li37.textContent = "Transition";
+    			t119 = space();
+    			li38 = element("li");
+    			li38.textContent = "Free Topics";
     			attr_dev(h1, "class", "uk-heading-large uk-text-center");
     			add_location(h1, file$6, 6, 4, 155);
     			set_style(button, "-min-width", "61%");
@@ -2920,12 +3245,107 @@ var app = (function () {
     			set_style(button, "box-shadow", "0 10px 10px #0001");
     			attr_dev(button, "class", "uk-button uk-button-primary uk-button-large uk-margin");
     			add_location(button, file$6, 10, 12, 400);
-    			set_style(a, "color", "white");
-    			attr_dev(a, "href", "https://abstract.cc2c.de/?termin=1381");
-    			attr_dev(a, "target", "_blank");
-    			add_location(a, file$6, 9, 8, 300);
+    			set_style(a0, "color", "white");
+    			attr_dev(a0, "href", "https://abstract.cc2c.de/?termin=1381");
+    			attr_dev(a0, "target", "_blank");
+    			add_location(a0, file$6, 9, 8, 300);
     			attr_dev(div0, "class", "uk-flex uk-flex-center uk-padding-large");
     			add_location(div0, file$6, 8, 4, 237);
+    			attr_dev(h2, "class", "uk-heading eus-normcase");
+    			add_location(h2, file$6, 15, 4, 665);
+    			add_location(p0, file$6, 16, 4, 741);
+    			attr_dev(h30, "class", "eus-normcase");
+    			add_location(h30, file$6, 17, 4, 817);
+    			attr_dev(h40, "class", "eus-normcase");
+    			add_location(h40, file$6, 18, 4, 927);
+    			add_location(li0, file$6, 20, 8, 1009);
+    			add_location(li1, file$6, 21, 8, 1243);
+    			add_location(ul0, file$6, 19, 4, 995);
+    			attr_dev(h41, "class", "eus-normcase");
+    			add_location(h41, file$6, 23, 4, 1384);
+    			attr_dev(span0, "class", "eus-highlight");
+    			add_location(span0, file$6, 25, 12, 1449);
+    			attr_dev(span1, "class", "eus-highlight");
+    			add_location(span1, file$6, 25, 164, 1601);
+    			add_location(li2, file$6, 25, 8, 1445);
+    			add_location(li3, file$6, 26, 8, 1747);
+    			add_location(li4, file$6, 27, 8, 1931);
+    			add_location(li5, file$6, 28, 8, 1997);
+    			add_location(ul1, file$6, 24, 4, 1431);
+    			attr_dev(h31, "class", "eus-normcase");
+    			add_location(h31, file$6, 31, 4, 2160);
+    			attr_dev(h42, "class", "uk-margin-remove eus-normcase");
+    			add_location(h42, file$6, 32, 4, 2221);
+    			attr_dev(li6, "class", "eus-highlight");
+    			add_location(li6, file$6, 35, 8, 2357);
+    			add_location(li7, file$6, 36, 8, 2434);
+    			add_location(li8, file$6, 37, 8, 2482);
+    			add_location(li9, file$6, 38, 8, 2514);
+    			add_location(li10, file$6, 39, 8, 2613);
+    			add_location(li11, file$6, 40, 8, 2645);
+    			add_location(ul2, file$6, 33, 4, 2333);
+    			attr_dev(h43, "class", "eus-normcase");
+    			add_location(h43, file$6, 43, 4, 2713);
+    			add_location(p1, file$6, 44, 4, 2776);
+    			attr_dev(h32, "class", "eus-normcase");
+    			add_location(h32, file$6, 45, 4, 2811);
+    			attr_dev(span2, "class", "eus-highlight");
+    			add_location(span2, file$6, 47, 12, 2881);
+    			attr_dev(span3, "class", "eus-highlight");
+    			add_location(span3, file$6, 47, 75, 2944);
+    			attr_dev(span4, "class", "eus-highlight");
+    			add_location(span4, file$6, 47, 125, 2994);
+    			add_location(li12, file$6, 47, 8, 2877);
+    			attr_dev(span5, "class", "eus-highlight");
+    			add_location(span5, file$6, 48, 12, 3074);
+    			attr_dev(span6, "class", "eus-highlight");
+    			add_location(span6, file$6, 48, 77, 3139);
+    			add_location(li13, file$6, 48, 8, 3070);
+    			attr_dev(span7, "class", "eus-highlight");
+    			add_location(span7, file$6, 49, 12, 3236);
+    			attr_dev(a1, "href", "/programme");
+    			attr_dev(a1, "target", "_blank");
+    			attr_dev(a1, "rel", "noopener");
+    			add_location(a1, file$6, 49, 99, 3323);
+    			add_location(li14, file$6, 51, 16, 3430);
+    			add_location(li15, file$6, 55, 24, 3661);
+    			add_location(li16, file$6, 56, 24, 3715);
+    			add_location(li17, file$6, 57, 24, 3757);
+    			add_location(li18, file$6, 58, 24, 3799);
+    			add_location(ul3, file$6, 54, 20, 3631);
+    			add_location(li19, file$6, 52, 16, 3552);
+    			add_location(ul4, file$6, 50, 12, 3408);
+    			add_location(li20, file$6, 49, 8, 3232);
+    			attr_dev(span8, "class", "eus-highlight");
+    			add_location(span8, file$6, 61, 12, 3913);
+    			add_location(li21, file$6, 63, 16, 4009);
+    			add_location(li22, file$6, 64, 16, 4092);
+    			add_location(li23, file$6, 65, 16, 4131);
+    			add_location(ul5, file$6, 62, 12, 3987);
+    			add_location(li24, file$6, 61, 8, 3909);
+    			add_location(ul6, file$6, 46, 4, 2863);
+    			attr_dev(h33, "class", "eus-normcase");
+    			add_location(h33, file$6, 70, 4, 4210);
+    			attr_dev(a2, "href", "mailto:info@eusuhm.info");
+    			add_location(a2, file$6, 74, 15, 4479);
+    			add_location(p2, file$6, 71, 4, 4269);
+    			attr_dev(h34, "class", "eus-normcase");
+    			add_location(h34, file$6, 78, 4, 4624);
+    			add_location(li25, file$6, 80, 8, 4747);
+    			add_location(li26, file$6, 81, 8, 4795);
+    			add_location(li27, file$6, 82, 8, 4848);
+    			add_location(li28, file$6, 83, 8, 4881);
+    			add_location(li29, file$6, 84, 8, 4949);
+    			add_location(li30, file$6, 85, 8, 4981);
+    			add_location(li31, file$6, 86, 8, 5040);
+    			add_location(li32, file$6, 87, 8, 5096);
+    			add_location(li33, file$6, 88, 8, 5150);
+    			add_location(li34, file$6, 89, 8, 5211);
+    			add_location(li35, file$6, 90, 8, 5259);
+    			add_location(li36, file$6, 91, 8, 5311);
+    			add_location(li37, file$6, 92, 8, 5357);
+    			add_location(li38, file$6, 93, 8, 5389);
+    			add_location(ul7, file$6, 79, 4, 4733);
     			attr_dev(div1, "class", "uk-container uk-padding-large");
     			add_location(div1, file$6, 5, 0, 106);
     		},
@@ -2937,8 +3357,141 @@ var app = (function () {
     			append_dev(div1, h1);
     			append_dev(div1, t1);
     			append_dev(div1, div0);
-    			append_dev(div0, a);
-    			append_dev(a, button);
+    			append_dev(div0, a0);
+    			append_dev(a0, button);
+    			append_dev(div1, t3);
+    			append_dev(div1, h2);
+    			append_dev(div1, t5);
+    			append_dev(div1, p0);
+    			append_dev(div1, t7);
+    			append_dev(div1, h30);
+    			append_dev(div1, t9);
+    			append_dev(div1, h40);
+    			append_dev(div1, t11);
+    			append_dev(div1, ul0);
+    			append_dev(ul0, li0);
+    			append_dev(ul0, t13);
+    			append_dev(ul0, li1);
+    			append_dev(div1, t15);
+    			append_dev(div1, h41);
+    			append_dev(div1, t17);
+    			append_dev(div1, ul1);
+    			append_dev(ul1, li2);
+    			append_dev(li2, span0);
+    			append_dev(li2, t19);
+    			append_dev(li2, span1);
+    			append_dev(li2, t21);
+    			append_dev(ul1, t22);
+    			append_dev(ul1, li3);
+    			append_dev(ul1, t24);
+    			append_dev(ul1, li4);
+    			append_dev(ul1, t26);
+    			append_dev(ul1, li5);
+    			append_dev(div1, t28);
+    			append_dev(div1, h31);
+    			append_dev(div1, t30);
+    			append_dev(div1, h42);
+    			append_dev(div1, t32);
+    			append_dev(div1, ul2);
+    			append_dev(ul2, li6);
+    			append_dev(ul2, t34);
+    			append_dev(ul2, li7);
+    			append_dev(ul2, t36);
+    			append_dev(ul2, li8);
+    			append_dev(ul2, t38);
+    			append_dev(ul2, li9);
+    			append_dev(ul2, t40);
+    			append_dev(ul2, li10);
+    			append_dev(ul2, t42);
+    			append_dev(ul2, li11);
+    			append_dev(div1, t44);
+    			append_dev(div1, h43);
+    			append_dev(div1, t46);
+    			append_dev(div1, p1);
+    			append_dev(div1, t48);
+    			append_dev(div1, h32);
+    			append_dev(div1, t50);
+    			append_dev(div1, ul6);
+    			append_dev(ul6, li12);
+    			append_dev(li12, span2);
+    			append_dev(li12, t52);
+    			append_dev(li12, span3);
+    			append_dev(li12, t54);
+    			append_dev(li12, span4);
+    			append_dev(li12, t56);
+    			append_dev(ul6, t57);
+    			append_dev(ul6, li13);
+    			append_dev(li13, span5);
+    			append_dev(li13, t59);
+    			append_dev(li13, span6);
+    			append_dev(li13, t61);
+    			append_dev(ul6, t62);
+    			append_dev(ul6, li20);
+    			append_dev(li20, span7);
+    			append_dev(li20, t64);
+    			append_dev(li20, a1);
+    			append_dev(li20, t66);
+    			append_dev(li20, ul4);
+    			append_dev(ul4, li14);
+    			append_dev(ul4, t68);
+    			append_dev(ul4, li19);
+    			append_dev(li19, t69);
+    			append_dev(li19, ul3);
+    			append_dev(ul3, li15);
+    			append_dev(ul3, t71);
+    			append_dev(ul3, li16);
+    			append_dev(ul3, t73);
+    			append_dev(ul3, li17);
+    			append_dev(ul3, t75);
+    			append_dev(ul3, li18);
+    			append_dev(ul6, t77);
+    			append_dev(ul6, li24);
+    			append_dev(li24, span8);
+    			append_dev(li24, t79);
+    			append_dev(li24, ul5);
+    			append_dev(ul5, li21);
+    			append_dev(ul5, t81);
+    			append_dev(ul5, li22);
+    			append_dev(ul5, t83);
+    			append_dev(ul5, li23);
+    			append_dev(div1, t85);
+    			append_dev(div1, h33);
+    			append_dev(div1, t87);
+    			append_dev(div1, p2);
+    			append_dev(p2, t88);
+    			append_dev(p2, a2);
+    			append_dev(p2, t90);
+    			append_dev(div1, t91);
+    			append_dev(div1, h34);
+    			append_dev(div1, t93);
+    			append_dev(div1, ul7);
+    			append_dev(ul7, li25);
+    			append_dev(ul7, t95);
+    			append_dev(ul7, li26);
+    			append_dev(ul7, t97);
+    			append_dev(ul7, li27);
+    			append_dev(ul7, t99);
+    			append_dev(ul7, li28);
+    			append_dev(ul7, t101);
+    			append_dev(ul7, li29);
+    			append_dev(ul7, t103);
+    			append_dev(ul7, li30);
+    			append_dev(ul7, t105);
+    			append_dev(ul7, li31);
+    			append_dev(ul7, t107);
+    			append_dev(ul7, li32);
+    			append_dev(ul7, t109);
+    			append_dev(ul7, li33);
+    			append_dev(ul7, t111);
+    			append_dev(ul7, li34);
+    			append_dev(ul7, t113);
+    			append_dev(ul7, li35);
+    			append_dev(ul7, t115);
+    			append_dev(ul7, li36);
+    			append_dev(ul7, t117);
+    			append_dev(ul7, li37);
+    			append_dev(ul7, t119);
+    			append_dev(ul7, li38);
     		},
     		p: noop,
     		i: noop,
@@ -3545,7 +4098,7 @@ var app = (function () {
     }
 
     // (87:14) {#if Array.isArray(event.event)}
-    function create_if_block$2(ctx) {
+    function create_if_block$3(ctx) {
     	let div;
     	let each_value_3 = /*event*/ ctx[8].event;
     	validate_each_argument(each_value_3);
@@ -3608,7 +4161,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$3.name,
     		type: "if",
     		source: "(87:14) {#if Array.isArray(event.event)}",
     		ctx
@@ -3676,7 +4229,7 @@ var app = (function () {
     	function select_block_type_3(ctx, dirty) {
     		if (dirty & /*$eventSchedule*/ 1) show_if = null;
     		if (show_if == null) show_if = !!Array.isArray(/*event*/ ctx[8].event);
-    		if (show_if) return create_if_block$2;
+    		if (show_if) return create_if_block$3;
     		return create_else_block$2;
     	}
 
@@ -5034,6 +5587,43 @@ var app = (function () {
     	return child_ctx;
     }
 
+    // (30:14) {#if button.label2}
+    function create_if_block$2(ctx) {
+    	let p;
+    	let t_value = /*button*/ ctx[0].label2 + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t = text(t_value);
+    			set_style(p, "color", "black");
+    			set_style(p, "margin", "5px 0 0 0");
+    			set_style(p, "padding", "0");
+    			set_style(p, "opacity", "0.5");
+    			add_location(p, file$2, 30, 17, 1952);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$2.name,
+    		type: "if",
+    		source: "(30:14) {#if button.label2}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
     // (23:6) {#each topbuttons as button, i}
     function create_each_block$2(ctx) {
     	let div1;
@@ -5043,6 +5633,8 @@ var app = (function () {
     	let t0_value = /*button*/ ctx[0].label + "";
     	let t0;
     	let t1;
+    	let t2;
+    	let if_block = /*button*/ ctx[0].label2 && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -5052,17 +5644,21 @@ var app = (function () {
     			h3 = element("h3");
     			t0 = text(t0_value);
     			t1 = space();
+    			if (if_block) if_block.c();
+    			t2 = space();
+    			set_style(h3, "padding", "0");
+    			set_style(h3, "margin", "0");
     			attr_dev(h3, "class", "eus-line-height-1");
-    			add_location(h3, file$2, 28, 14, 1697);
+    			add_location(h3, file$2, 28, 14, 1819);
     			set_style(div0, "background-color", euscolors[(2 + /*i*/ ctx[2]) % (euscolors.length - 1)]);
-    			attr_dev(div0, "class", "uk-height-small uk-text-center uk-card uk-card-body uk-flex uk-flex-middle uk-flex-center");
-    			add_location(div0, file$2, 27, 12, 1509);
+    			attr_dev(div0, "class", "uk-height-small uk-text-center uk-card uk-card-body uk-flex uk-flex-column uk-flex-middle uk-flex-center");
+    			add_location(div0, file$2, 27, 12, 1616);
     			attr_dev(a, "href", /*button*/ ctx[0].url);
     			attr_dev(a, "rel", "noopener");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$2, 26, 10, 1441);
+    			add_location(a, file$2, 26, 10, 1548);
     			attr_dev(div1, "class", "eus-clip eus-topbutton");
-    			add_location(div1, file$2, 23, 8, 1212);
+    			add_location(div1, file$2, 23, 8, 1319);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -5070,11 +5666,16 @@ var app = (function () {
     			append_dev(a, div0);
     			append_dev(div0, h3);
     			append_dev(h3, t0);
-    			append_dev(div1, t1);
+    			append_dev(div0, t1);
+    			if (if_block) if_block.m(div0, null);
+    			append_dev(div1, t2);
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			if (/*button*/ ctx[0].label2) if_block.p(ctx, dirty);
+    		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
+    			if (if_block) if_block.d();
     		}
     	};
 
@@ -5144,13 +5745,20 @@ var app = (function () {
     			attr_dev(article0, "id", "");
     			attr_dev(article0, "class", "uk-article uk-padding-remove-bottom");
     			add_location(article0, file$2, 8, 2, 178);
-    			add_location(p, file$2, 13, 6, 654);
+    			set_style(p, "padding", "0");
+    			set_style(p, "margin", "0");
+    			add_location(p, file$2, 13, 6, 672);
+    			set_style(h1, "padding", "0");
+    			set_style(h1, "margin", "0");
     			attr_dev(h1, "class", "uk-heading-large");
-    			add_location(h1, file$2, 14, 6, 691);
+    			add_location(h1, file$2, 14, 6, 739);
+    			set_style(h3, "padding", "0");
+    			set_style(h3, "margin", "0");
     			attr_dev(h3, "class", "eus-transform-none");
-    			add_location(h3, file$2, 15, 6, 755);
+    			add_location(h3, file$2, 15, 6, 833);
     			set_style(div0, "max-width", "100%");
     			set_style(div0, "margin", "60px 30px");
+    			set_style(div0, "padding", "60px 0");
     			attr_dev(div0, "class", "eus-clip uk-card uk-card-body uk-background-primary uk-padding-small");
     			add_location(div0, file$2, 12, 4, 522);
     			attr_dev(section0, "id", "jumbotron");
@@ -5158,13 +5766,13 @@ var app = (function () {
     			add_location(section0, file$2, 11, 0, 371);
     			attr_dev(div1, "class", "uk-grid uk-grid-match uk-child-width-1-3@s uk-padding");
     			attr_dev(div1, "uk-grid", "");
-    			add_location(div1, file$2, 21, 4, 1088);
+    			add_location(div1, file$2, 21, 4, 1195);
     			attr_dev(article1, "class", "");
-    			add_location(article1, file$2, 20, 2, 1064);
+    			add_location(article1, file$2, 20, 2, 1171);
     			set_style(section1, "position", "relative");
     			set_style(section1, "top", "-100px");
     			attr_dev(section1, "class", "");
-    			add_location(section1, file$2, 19, 0, 1004);
+    			add_location(section1, file$2, 19, 0, 1111);
     			attr_dev(main, "class", "uk-container");
     			add_location(main, file$2, 6, 0, 122);
     		},
