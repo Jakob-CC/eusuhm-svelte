@@ -400,4 +400,12 @@ a:hover {
         padding-bottom: 30px;
     }
 }
-    
+
+
+.eus-normcase {
+    text-transform: none;
+}
+
+.eus-highlight {
+    color: var(--color-main);
+}
