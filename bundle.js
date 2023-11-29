@@ -1564,6 +1564,7 @@ var app = (function () {
     			}
 
     			each_1_anchor = empty();
+    			attr_dev(h1, "class", "eus-line-height-1");
     			add_location(h1, file$7, 19, 22, 738);
     		},
     		m: function mount(target, anchor) {
@@ -1635,7 +1636,7 @@ var app = (function () {
     		c: function create() {
     			t = text(t_value);
     			br = element("br");
-    			add_location(br, file$7, 48, 37, 2672);
+    			add_location(br, file$7, 48, 37, 2733);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -1683,7 +1684,7 @@ var app = (function () {
 
     			t = space();
     			attr_dev(div, "class", "uk-grid");
-    			add_location(div, file$7, 26, 30, 1115);
+    			add_location(div, file$7, 26, 30, 1141);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1775,9 +1776,9 @@ var app = (function () {
     			}
 
     			attr_dev(ul, "class", "uk-list eus-margin-0");
-    			add_location(ul, file$7, 38, 46, 2107);
+    			add_location(ul, file$7, 38, 46, 2168);
     			attr_dev(div, "class", "uk-width-1-2 eus-width-1-1-mobile");
-    			add_location(div, file$7, 37, 40, 2012);
+    			add_location(div, file$7, 37, 40, 2073);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1853,16 +1854,16 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			t2 = text(t2_value);
-    			attr_dev(h3, "class", "eus-topborder eus-margin-0");
-    			add_location(h3, file$7, 32, 44, 1626);
-    			attr_dev(p, "class", "");
-    			add_location(p, file$7, 33, 48, 1732);
+    			attr_dev(h3, "class", "eus-line-height-1 eus-topborder eus-margin-0");
+    			add_location(h3, file$7, 32, 44, 1652);
+    			attr_dev(p, "class", "uk-padding-remove");
+    			add_location(p, file$7, 33, 48, 1776);
     			attr_dev(a, "href", a_href_value = /*value*/ ctx[8].link);
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "rel", "noopener");
-    			add_location(a, file$7, 31, 44, 1526);
+    			add_location(a, file$7, 31, 44, 1552);
     			attr_dev(div, "class", "uk-width-1-2 eus-width-1-1-mobile");
-    			add_location(div, file$7, 29, 40, 1344);
+    			add_location(div, file$7, 29, 40, 1370);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1908,7 +1909,7 @@ var app = (function () {
     			li = element("li");
     			t = text(t_value);
     			attr_dev(li, "class", "eus-margin-0");
-    			add_location(li, file$7, 40, 54, 2276);
+    			add_location(li, file$7, 40, 54, 2337);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -2080,6 +2081,7 @@ var app = (function () {
     function create_if_block$4(ctx) {
     	let div;
     	let t;
+    	let br;
     	let if_block = /*section*/ ctx[3] !== /*notdisplayed*/ ctx[1] && create_if_block_1$3(ctx);
 
     	const block = {
@@ -2087,13 +2089,16 @@ var app = (function () {
     			div = element("div");
     			if (if_block) if_block.c();
     			t = space();
+    			br = element("br");
     			attr_dev(div, "class", "eus-width-1-2-desktop eus-width-1-1-mobile uk-padding uk-padding-remove-top");
-    			add_location(div, file$7, 59, 14, 2983);
+    			add_location(div, file$7, 59, 14, 3044);
+    			add_location(br, file$7, 76, 14, 3983);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			if (if_block) if_block.m(div, null);
-    			append_dev(div, t);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, br, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (/*section*/ ctx[3] !== /*notdisplayed*/ ctx[1]) {
@@ -2102,7 +2107,7 @@ var app = (function () {
     				} else {
     					if_block = create_if_block_1$3(ctx);
     					if_block.c();
-    					if_block.m(div, t);
+    					if_block.m(div, null);
     				}
     			} else if (if_block) {
     				if_block.d(1);
@@ -2112,6 +2117,8 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
     			if (if_block) if_block.d();
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(br);
     		}
     	};
 
@@ -2152,8 +2159,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h1, file$7, 61, 20, 3142);
-    			add_location(p, file$7, 62, 20, 3182);
+    			attr_dev(h1, "class", "uk-margin-remove");
+    			add_location(h1, file$7, 61, 20, 3203);
+    			attr_dev(p, "class", "uk-margin-remove");
+    			set_style(p, "padding-left", "2px");
+    			add_location(p, file$7, 62, 20, 3268);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2257,7 +2267,7 @@ var app = (function () {
     			t = text(t_value);
     			attr_dev(a, "class", "uk-link-muted");
     			attr_dev(a, "href", a_href_value = "tel:" + /*value*/ ctx[8]);
-    			add_location(a, file$7, 67, 36, 3501);
+    			add_location(a, file$7, 67, 36, 3638);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -2299,7 +2309,7 @@ var app = (function () {
     			t = text(t_value);
     			attr_dev(a, "class", "uk-link-muted");
     			attr_dev(a, "href", a_href_value = "mailto:" + /*value*/ ctx[8]);
-    			add_location(a, file$7, 65, 36, 3347);
+    			add_location(a, file$7, 65, 36, 3484);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -2347,7 +2357,7 @@ var app = (function () {
     			if_block.c();
     			t = text("\r\n                                 ");
     			br = element("br");
-    			add_location(br, file$7, 71, 38, 3722);
+    			add_location(br, file$7, 71, 38, 3859);
     		},
     		m: function mount(target, anchor) {
     			if_block.m(target, anchor);
@@ -2463,7 +2473,7 @@ var app = (function () {
     			attr_dev(div0, "class", "uk-width-1-2 eus-width-1-1-mobile");
     			add_location(div0, file$7, 14, 4, 414);
     			attr_dev(div1, "class", "uk-width-1-2");
-    			add_location(div1, file$7, 56, 4, 2841);
+    			add_location(div1, file$7, 56, 4, 2902);
     			attr_dev(div2, "class", "uk-grid uk-grid-column");
     			add_location(div2, file$7, 13, 2, 372);
     			attr_dev(article, "id", "landing-data");
