@@ -33,9 +33,9 @@ export const congressData = writable({
         },
         {
             organisation: 'DGSPJ',
-            fullname: 'German Association for Social Paediatrics and Youth Medicine',
+            fullname: 'German Society for Social Paediatrics',
             link: 'https://www.dgspj.de/',
-            members: ['Heidrun Thaiss']
+            members: ['Heidrun Thaiss','Ulrike Horacek']
         }
     ],
     'Location': {
